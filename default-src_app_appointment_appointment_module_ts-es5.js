@@ -1,18 +1,4 @@
 (function () {
-  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-  function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-  function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-  function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-  function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-  function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-  function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
   function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
   function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -33,7 +19,7 @@
 
   function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-  (self["webpackChunksb_admin_bs4_angular_9"] = self["webpackChunksb_admin_bs4_angular_9"] || []).push([["default-src_app_appointment_appointment_module_ts"], {
+  (self["webpackChunkElitePro"] = self["webpackChunkElitePro"] || []).push([["default-src_app_appointment_appointment_module_ts"], {
     /***/
     52955:
     /*!******************************************************************************************!*\
@@ -26768,19 +26754,19 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! @angular/common */
       38583);
       /* harmony import */
@@ -26816,13 +26802,13 @@
       /* harmony import */
 
 
-      var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! @angular/common/http */
       91841);
       /* harmony import */
 
 
-      var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! @fullcalendar/angular */
       52955);
       /* harmony import */
@@ -26846,38 +26832,51 @@
       /* harmony import */
 
 
-      var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! @angular/forms */
       3679);
       /* harmony import */
 
 
-      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! @ng-bootstrap/ng-bootstrap */
       12664);
       /* harmony import */
 
 
-      var _patient_patient_control_patient_control_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-      /*! ../patient/patient-control/patient-control.module */
-      9448);
+      var _patient_control_patient_control_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      /*! ../patient-control/patient-control.module */
+      49870);
       /* harmony import */
 
 
       var _components_appointment_list_appointment_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ./components/appointment-list/appointment-list.component */
-      77645); // a plugin!
+      77645);
+      /* harmony import */
 
 
-      _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_10__.FullCalendarModule.registerPlugins([_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_5__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_6__["default"], _fullcalendar_timeGrid__WEBPACK_IMPORTED_MODULE_7__["default"]]);
+      var _pipes_search_appointment_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      /*! ./pipes/search-appointment-pipe.pipe */
+      24367);
+      /* harmony import */
+
+
+      var _material_material_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      /*! ../material/material.module */
+      90898); // a plugin!
+
+
+      _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_12__.FullCalendarModule.registerPlugins([_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_5__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_6__["default"], _fullcalendar_timeGrid__WEBPACK_IMPORTED_MODULE_7__["default"]]);
 
       var _AppointmentModule = function AppointmentModule() {
         _classCallCheck(this, AppointmentModule);
       };
 
-      _AppointmentModule = (0, tslib__WEBPACK_IMPORTED_MODULE_11__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_12__.NgModule)({
-        declarations: [_appointment_component__WEBPACK_IMPORTED_MODULE_1__.AppointmentComponent, _components_new_appointment_new_appointment_component__WEBPACK_IMPORTED_MODULE_2__.NewAppointmentComponent, _components_appointment_list_appointment_list_component__WEBPACK_IMPORTED_MODULE_9__.AppointmentListComponent],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_13__.CommonModule, _appointment_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppointmentRoutingModule, _shared_modules_stat_stat_module__WEBPACK_IMPORTED_MODULE_3__.StatModule, _shared_modules_page_header_page_header_module__WEBPACK_IMPORTED_MODULE_4__.PageHeaderModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_10__.FullCalendarModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_16__.NgbModule, _patient_patient_control_patient_control_module__WEBPACK_IMPORTED_MODULE_8__.PatientControlModule],
+      _AppointmentModule = (0, tslib__WEBPACK_IMPORTED_MODULE_13__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_14__.NgModule)({
+        declarations: [_appointment_component__WEBPACK_IMPORTED_MODULE_1__.AppointmentComponent, _components_new_appointment_new_appointment_component__WEBPACK_IMPORTED_MODULE_2__.NewAppointmentComponent, _components_appointment_list_appointment_list_component__WEBPACK_IMPORTED_MODULE_9__.AppointmentListComponent, _pipes_search_appointment_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__.SearchAppointment],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_15__.CommonModule, _appointment_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppointmentRoutingModule, _shared_modules_stat_stat_module__WEBPACK_IMPORTED_MODULE_3__.StatModule, _shared_modules_page_header_page_header_module__WEBPACK_IMPORTED_MODULE_4__.PageHeaderModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_12__.FullCalendarModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule, _angular_forms__WEBPACK_IMPORTED_MODULE_17__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_17__.FormsModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__.NgbModule, _patient_control_patient_control_module__WEBPACK_IMPORTED_MODULE_8__.PatientControlModule, _material_material_module__WEBPACK_IMPORTED_MODULE_11__.MaterialModule],
+        providers: [_angular_common__WEBPACK_IMPORTED_MODULE_15__.DatePipe],
         exports: [_appointment_component__WEBPACK_IMPORTED_MODULE_1__.AppointmentComponent, _components_new_appointment_new_appointment_component__WEBPACK_IMPORTED_MODULE_2__.NewAppointmentComponent]
       })], _AppointmentModule);
       /***/
@@ -26911,7 +26910,7 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
@@ -26929,9 +26928,15 @@
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/core */
       37716);
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! @angular/router */
+      39895);
       /* harmony import */
 
 
@@ -26946,13 +26951,15 @@
       83430);
 
       var _AppointmentListComponent = /*#__PURE__*/function () {
-        function AppointmentListComponent(appointmentService) {
+        function AppointmentListComponent(appointmentService, router) {
           _classCallCheck(this, AppointmentListComponent);
 
           this.appointmentService = appointmentService;
+          this.router = router;
           this.appointmentList = [];
           this.page = 1;
           this.pageSize = 5;
+          this.searchAppointment = "";
         }
 
         _createClass(AppointmentListComponent, [{
@@ -26971,6 +26978,14 @@
               console.log(data);
             });
           }
+        }, {
+          key: "gotoAppointment",
+          value: function gotoAppointment(appointment) {
+            var appoint = JSON.stringify(appointment);
+            sessionStorage.setItem('appointment', appoint);
+            sessionStorage.setItem('patientId', appointment.patient.mrn);
+            this.router.navigate(['/appointment/new-appointment']);
+          }
         }]);
 
         return AppointmentListComponent;
@@ -26979,10 +26994,12 @@
       _AppointmentListComponent.ctorParameters = function () {
         return [{
           type: _services_appointment_service__WEBPACK_IMPORTED_MODULE_3__.AppointmentService
+        }, {
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_4__.Router
         }];
       };
 
-      _AppointmentListComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_5__.Component)({
+      _AppointmentListComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_6__.Component)({
         selector: 'app-appointment-list',
         template: _raw_loader_appointment_list_component_html__WEBPACK_IMPORTED_MODULE_0__["default"],
         animations: [(0, _router_animations__WEBPACK_IMPORTED_MODULE_2__.routerTransition)()],
@@ -27019,7 +27036,7 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
@@ -27037,19 +27054,19 @@
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! @angular/forms */
       3679);
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      var _angular_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! @angular/router */
       39895);
       /* harmony import */
@@ -27061,21 +27078,21 @@
       /* harmony import */
 
 
-      var _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var _master_unit_master_masters_unit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ../../../master/unit-master/masters/unit */
+      56552);
+      /* harmony import */
+
+
+      var _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../../../master/unit-master/masters/Employee */
       51716);
       /* harmony import */
 
 
-      var _masters_appointment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var _masters_appointment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../../masters/appointment */
       59542);
-      /* harmony import */
-
-
-      var _patient_master_patient__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! ../../../patient/master/patient */
-      19975);
       /* harmony import */
 
 
@@ -27109,7 +27126,7 @@
       /* harmony import */
 
 
-      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! @ng-bootstrap/ng-bootstrap */
       12664);
       /* harmony import */
@@ -27124,9 +27141,33 @@
       var _master_lookup_module_services_lookup_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../../../master/lookup-module/services/lookup.service */
       41168);
+      /* harmony import */
+
+
+      var _layout_alert_alert_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      /*! ../../../layout/alert/alert.service */
+      85373);
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+      /*! @angular/common */
+      38583);
+      /* harmony import */
+
+
+      var _Common_Security_Services_common_service_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      /*! ../../../Common-Security-Services/common-service.service */
+      31564);
+      /* harmony import */
+
+
+      var _preferences_masters_preferences__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      /*! ../../../preferences/masters/preferences */
+      75661);
 
       var _NewAppointmentComponent = /*#__PURE__*/function () {
-        function NewAppointmentComponent(branchService, departmentService, unitService, patientService, formBuilder, appointmentService, config, modalService, lookupService, router) {
+        function NewAppointmentComponent(branchService, departmentService, unitService, patientService, formBuilder, appointmentService, config, modalService, lookupService, router, alertService, datePipe, commonService) {
           _classCallCheck(this, NewAppointmentComponent);
 
           this.branchService = branchService;
@@ -27139,39 +27180,39 @@
           this.modalService = modalService;
           this.lookupService = lookupService;
           this.router = router;
-          this.employee = new _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_3__.Employee();
-          this.appointmentForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormGroup({});
+          this.alertService = alertService;
+          this.datePipe = datePipe;
+          this.commonService = commonService;
+          this.employee = new _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_4__.Employee();
+          this.appointmentForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormGroup({});
           this.date = new Date();
           this.interval = 15;
           this.appointmentTimeSlotList = [];
           this.appointmentTimeSlot = [];
           this.appointmentList = new Array();
-          this.addAppointment = new _masters_appointment__WEBPACK_IMPORTED_MODULE_4__.Appointment();
+          this.addAppointment = new _masters_appointment__WEBPACK_IMPORTED_MODULE_5__.Appointment();
           this.patientList = new Array();
           this.newPatientList = new Array();
-          this.patient = new _patient_master_patient__WEBPACK_IMPORTED_MODULE_5__.Patient();
+          this.patient = null;
           this.startDate = new Date();
           this.endDate = new Date();
           this.lookupCategoryList = [];
           this.lookupEntity = new _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_6__.LookupEntity();
           this.appointmentStatus = new _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_6__.LookupEntity();
           this.appointmentStatusType = new _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_6__.LookupEntity();
-          this.toBeDeleteAppointment = new _masters_appointment__WEBPACK_IMPORTED_MODULE_4__.Appointment();
+          this.toBeDeleteAppointment = new _masters_appointment__WEBPACK_IMPORTED_MODULE_5__.Appointment();
           this.cancelledAppointmentStatus = new _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_6__.LookupEntity();
-          this.patientDetails = new _patient_master_patient__WEBPACK_IMPORTED_MODULE_5__.Patient();
-          this.calendarOptions = {
-            initialView: 'dayGridMonth',
-            dateClick: this.handleDateClick.bind(this),
-            events: [{
-              title: 'event 1',
-              date: '2021-06-23'
-            }, {
-              title: 'event 2',
-              date: '2021-22-06'
-            }],
-            slotMinWidth: 20,
-            contentHeight: 400
+          this.patientDetails = null;
+          this.appointment = new _masters_appointment__WEBPACK_IMPORTED_MODULE_5__.Appointment();
+          this.isFromDoctorsWorkbench = false;
+          this.unit = new _master_unit_master_masters_unit__WEBPACK_IMPORTED_MODULE_3__.Unit();
+          this.today = {
+            date: new Date(),
+            dateStr: new Date().toString()
           };
+          this.dateStr = new Date();
+          this.preferences = new _preferences_masters_preferences__WEBPACK_IMPORTED_MODULE_15__.Preferences();
+          this["class"] = "info";
           config.backdrop = "static";
           config.keyboard = false;
         }
@@ -27179,24 +27220,55 @@
         _createClass(NewAppointmentComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
+            var appointment = localStorage.getItem('appointment');
+            this.appointment = JSON.parse(appointment);
+            /*let preferences = localStorage.getItem('preferences')
+            this.preferences = JSON.parse(preferences);*/
+            //console.log(this.appointment)
+
+            this.reloadData();
+            this.reloadForm();
+            localStorage.removeItem('appointment');
+
+            if (this.appointment != null) {
+              this.fillData(this.appointment);
+            }
+          }
+        }, {
+          key: "reloadForm",
+          value: function reloadForm() {
+            this.appointmentForm = this.formBuilder.group({
+              branch: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(null),
+              department: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(null),
+              unit: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(null),
+              doctor: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(null)
+            });
+            this.preferences = this.commonService.getPreferences();
+
+            if (this.preferences) {
+              this.appointmentForm.controls.branch.setValue(this.preferences.branch.id);
+              this.getDepartmentList(this.preferences.branch.id);
+              this.appointmentForm.controls.department.setValue(this.preferences.department.departmentId);
+              this.getUnitList(this.preferences.department.departmentId);
+            } //console.group(this.commonService.getPatient(),this.commonService.getPreferences());
+
+          }
+        }, {
+          key: "reloadData",
+          value: function reloadData() {
             var _this3 = this;
 
             this.endDate = new Date(this.endDate.setHours(24, 0, 0, 0));
-            this.appointmentForm = this.formBuilder.group({
-              branch: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(null),
-              department: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(null),
-              unit: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(null),
-              doctor: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(null)
-            });
             this.branchService.getBranch().subscribe(function (data) {
               _this3.branchList = data;
             });
-            this.departmentService.getAllDepartments().subscribe(function (data) {
-              _this3.departmentList = data;
+            /*this.departmentService.getAllDepartments().subscribe(data =>{
+                this.departmentList = data;
             });
-            this.unitService.getUnit().subscribe(function (data) {
-              _this3.unitList = data;
-            });
+            this.unitService.getUnit().subscribe(data =>{
+                this.unitList = data;
+            });*/
+
             this.patientService.getPatientList().subscribe(function (data) {
               _this3.patientList = data;
             });
@@ -27206,21 +27278,179 @@
             this.lookupService.getLookupCategoryList().subscribe(function (data) {
               _this3.lookupCategoryList = data; //console.warn(data);
             });
-            this.lookupService.getLookupEntityList(19).subscribe(function (data) {
+            this.lookupService.getLookupEntityListByCategoryId(19).subscribe(function (data) {
               _this3.appointmentStatusList = data; //console.error(data);
             });
-            this.lookupService.getLookupEntityList(20).subscribe(function (data) {
+            this.lookupService.getLookupEntityListByCategoryId(20).subscribe(function (data) {
               _this3.appointmentStatusTypeList = data; //console.warn(data);
+            }); //this.handleDateClick(this.today);
+          }
+          /*calendarOptions: CalendarOptions = {
+              initialView: 'dayGridMonth',
+              dateClick: this.handleDateClick.bind(this), // bind is important!
+              events: [
+                  { title: 'event 1', date: '2021-06-26' },
+                  { title: 'event 2', date: '2021-22-06' }
+              ],
+              titleFormat: { // will produce something like "Tuesday, September 18, 2018"
+                  month: 'short',
+                  year: 'numeric',
+              },
+              contentHeight: 400,
+              aspectRatio: 1
+            };*/
+
+        }, {
+          key: "handleDateClick",
+          value: function handleDateClick(event) {
+            var _this4 = this;
+
+            this.startDate = event;
+
+            if (this.startDate == undefined || this.startDate == null) {
+              this.alertService.success('Please select Date.');
+              return;
+            }
+
+            if (this.appointmentForm.value.doctor == null) {
+              this.alertService.success('Please select Doctor.');
+              return;
+            }
+
+            this.appointmentService.getAppointmentListByFilter(this.startDate, this.appointmentForm.value.doctor, this.appointmentForm.value.department, this.appointmentForm.value.branch).subscribe(function (data) {
+              _this4.schedulerList = data; //console.log("Schedule list",data);
+            });
+          }
+          /*handleDateClick2(arg) {
+              //console.log('date click! ' , arg);
+              this.alertService.success(`date click ${this.datePipe.transform(arg)}`)
+              ////this.date = arg.date;
+              this.date = arg;
+              this.newPatientList = []
+              //Logic For showing waiting patinet list
+              for (let appointment of this.appointmentList) {
+                  if(appointment.doctor.employeeId == this.employee.employeeId) {
+                        let appointTime = new Date(this.date);
+                      let fromDate = new Date(appointment.fromDate);
+                      if (fromDate.getDate() == appointTime.getDate()) {
+                          //console.error(this.employee.employeeId)
+                          if (appointment.appointmentStatus.lookupId == 44) {
+                              let fromDate = new Date(appointment.fromDate)
+                              this.newPatientList.push([fromDate, appointment.patient]);
+                              //console.log("Function called")
+                          }
+                        }
+                  }
+              }
+              ////this.dateStr = arg.dateStr;
+              //const startDate = arg.date;
+              const startDate = arg;
+              const endDate = arg.getTime() + 86400000;
+              //console.log(endDate);
+              const date = new Date(endDate);
+              //console.log(date);
+              //console.log(arg);
+              // console.log(startDate, date.getHours());
+              this.startDate = new Date(startDate);
+              this.endDate = new Date(endDate);
+              
+              //this.appointmentService.getAppointmentTimeList(startDate, date, this.interval).subscribe(data => {
+                  //this.appointmentTimeSlotList = data;
+                  //this.appointmentTimeSlot = [];
+                  //this.appointmentTimeSlotList.forEach(data => {
+                  //	const date = new Date(data);
+                  //	var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
+                  //	let min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+                  //	var time = hour + ":" + min;
+                  //	this.appointmentTimeSlot.push(time);
+                  //})
+              //});
+                  this.appointmentService.getAppointmentListByFilter(this.startDate,this.appointmentForm.value.doctor,this.appointmentForm.value.department,this.appointmentForm.value.branch).subscribe(data => {
+                  /*this.appointmentTimeSlotList = data;
+                  this.appointmentTimeSlot = [];
+                  this.appointmentTimeSlotList.forEach(data => {
+                      const date = new Date(data);
+                      var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
+                      let min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+                      var time = hour + ":" + min;
+                      this.appointmentTimeSlot.push(time);
+                  })
+                  this.schedulerList = data;
+                  console.log("Schedule list",data);
+              });
+              
+          }*/
+
+        }, {
+          key: "getDepartmentList",
+          value: function getDepartmentList(value) {
+            var _this5 = this;
+
+            this.branchId = value;
+            this.departmentService.getDepartmentsByBranchId(this.branchId).subscribe(function (data) {
+              _this5.departmentList = data;
             });
           }
         }, {
-          key: "handleDateClick",
-          value: function handleDateClick(arg) {
-            var _this4 = this;
+          key: "getUnitList",
+          value: function getUnitList(value) {
+            var _this6 = this;
 
-            alert('date click! ' + arg.date);
-            this.date = arg.date;
-            this.newPatientList = []; //Logic For showing waiting patinet list
+            this.getDoctorByDepartment(value);
+            this.departmentId = value;
+            console.log(value);
+            this.unitService.getUnitByDepartmentId(this.departmentId).subscribe(function (data) {
+              _this6.unitList = data;
+            }); //console.log(this.departmentId);
+          }
+        }, {
+          key: "getDoctorByDepartment",
+          value: function getDoctorByDepartment(event) {
+            var _this7 = this;
+
+            //this.departmentService
+            this.departmentService.getEmployeeListByDepartmentId(event).subscribe(function (data) {
+              _this7.unitEmployeeMappingList = data;
+            });
+          }
+        }, {
+          key: "getDoctorList",
+          value: function getDoctorList(event) {
+            var _this8 = this;
+
+            //console.log(event)
+            this.unitId = event;
+            this.unitService.getUnitById(this.unitId).subscribe(function (data) {
+              _this8.unit = data;
+              _this8.unitEmployeeMappingList = _this8.unit.unitEmployeeMappingList;
+            });
+            this.unitEmployeeMappingList = event.unitEmployeeMappingList; //console.log(event.unitEmployeeMappingList);
+            //console.log(this.appointmentForm.value.doctor);
+          }
+        }, {
+          key: "showDoctorName",
+          value: function showDoctorName(event) {
+            var _this9 = this;
+
+            console.log(event);
+            this.employee = event;
+            var interval = this.employee.slot.lookupValue;
+            this.interval = Number(interval.substring(0, 2));
+            this.appointmentService.getAppointmentTimeList(this.startDate, this.endDate, this.interval).subscribe(function (data) {
+              _this9.appointmentTimeSlotList = data;
+              _this9.appointmentTimeSlot = [];
+
+              _this9.appointmentTimeSlotList.forEach(function (data) {
+                var date = new Date(data);
+                var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
+                var min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+                var time = hour + ":" + min;
+
+                _this9.appointmentTimeSlot.push(time);
+              });
+            }); //Logic For showing waiting patinet list
+
+            this.newPatientList = [];
 
             var _iterator = _createForOfIteratorHelper(this.appointmentList),
                 _step;
@@ -27238,99 +27468,7 @@
                     if (appointment.appointmentStatus.lookupId == 44) {
                       var _fromDate = new Date(appointment.fromDate);
 
-                      this.newPatientList.push([appointment.patient, _fromDate]); //console.log("Function called")
-                    }
-                  }
-                }
-              }
-            } catch (err) {
-              _iterator.e(err);
-            } finally {
-              _iterator.f();
-            }
-
-            this.dateStr = arg.dateStr;
-            var startDate = arg.date;
-            var endDate = arg.date.getTime() + 86400000; //console.log(endDate);
-
-            var date = new Date(endDate); //console.log(date);
-            //console.log(arg);
-            // console.log(startDate, date.getHours());
-
-            this.startDate = new Date(startDate);
-            this.endDate = new Date(endDate);
-            this.appointmentService.getAppointmentTimeList(startDate, date, this.interval).subscribe(function (data) {
-              _this4.appointmentTimeSlotList = data;
-              _this4.appointmentTimeSlot = [];
-
-              _this4.appointmentTimeSlotList.forEach(function (data) {
-                var date = new Date(data);
-                var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
-                var min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
-                var time = hour + ":" + min;
-
-                _this4.appointmentTimeSlot.push(time);
-              });
-            });
-          }
-        }, {
-          key: "getDepartmentList",
-          value: function getDepartmentList(value) {
-            this.branchId = value.id; //console.log(this.branchId);
-          }
-        }, {
-          key: "getUnitList",
-          value: function getUnitList(value) {
-            this.departmentId = value.departmentId; //console.log(this.departmentId);
-          }
-        }, {
-          key: "getDoctorList",
-          value: function getDoctorList(event) {
-            this.unitId = event.unitId;
-            this.unitEmployeeMappingList = event.unitEmployeeMappingList; //console.log(event.unitEmployeeMappingList);
-            //console.log(this.appointmentForm.value.doctor);
-          }
-        }, {
-          key: "showDoctorName",
-          value: function showDoctorName(event) {
-            var _this5 = this;
-
-            this.employee = event;
-            var interval = this.employee.slot.lookupValue;
-            this.interval = Number(interval.substring(0, 2));
-            this.appointmentService.getAppointmentTimeList(this.startDate, this.endDate, this.interval).subscribe(function (data) {
-              _this5.appointmentTimeSlotList = data;
-              _this5.appointmentTimeSlot = [];
-
-              _this5.appointmentTimeSlotList.forEach(function (data) {
-                var date = new Date(data);
-                var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
-                var min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
-                var time = hour + ":" + min;
-
-                _this5.appointmentTimeSlot.push(time);
-              });
-            }); //Logic For showing waiting patinet list
-
-            this.newPatientList = [];
-
-            var _iterator2 = _createForOfIteratorHelper(this.appointmentList),
-                _step2;
-
-            try {
-              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-                var appointment = _step2.value;
-
-                if (appointment.doctor.employeeId == this.employee.employeeId) {
-                  var appointTime = new Date(this.date);
-                  var fromDate = new Date(appointment.fromDate);
-
-                  if (fromDate.getDate() == appointTime.getDate()) {
-                    //console.error(this.employee.employeeId)
-                    if (appointment.appointmentStatus.lookupId == 44) {
-                      var _fromDate2 = new Date(appointment.fromDate);
-
-                      this.newPatientList.push([appointment.patient, _fromDate2]); //console.log("Function called")
+                      this.newPatientList.push([_fromDate, appointment.patient]); //console.log("Function called")
                     }
                   }
                 }
@@ -27338,96 +27476,135 @@
               //console.log("This is ",this.employee)
 
             } catch (err) {
-              _iterator2.e(err);
+              _iterator.e(err);
             } finally {
-              _iterator2.f();
+              _iterator.f();
             }
           }
         }, {
           key: "returnDate",
           value: function returnDate(appointmentTime) {
-            //console.warn(this.date);
-            this.date.setHours(Number(appointmentTime.toString().substr(0, 2)));
-            this.date.setMinutes(Number(appointmentTime.toString().substr(3, 2))); //this.date.setMinutes(Number(appointmentTime.toString().substr(2,4)));
-            //console.warn(this.date);
-
+            this.date.setHours(Number(this.datePipe.transform(appointmentTime, 'HH:MM a').substr(0, 2)));
+            this.date.setMinutes(Number(this.datePipe.transform(appointmentTime, 'HH:MM a').substr(3, 2)));
             return this.date;
           }
         }, {
           key: "scheduleEvent",
-          value: function scheduleEvent(eventSchedulerForm, appointmentTime) {
-            //this.addAppointment = this.appointmentForm.value;
-            this.addAppointment.branch = this.appointmentForm.value.branch;
-            this.addAppointment.department = this.appointmentForm.value.department;
-            this.addAppointment.unit = this.appointmentForm.value.unit;
-            this.addAppointment.doctor = this.employee;
-            this.addAppointment.patient = this.patient;
+          value: function scheduleEvent(form, scheduler) {
+            if (scheduler.scheduledId == "3") {
+              return;
+            } else {
+              this.addAppointment.branch = this.appointmentForm.value.branch;
+              this.addAppointment.department = this.appointmentForm.value.department;
+              this.addAppointment.unit = this.unit;
+              this.addAppointment.doctor = this.employee;
+              this.addAppointment.patient = this.patient;
 
-            var _iterator3 = _createForOfIteratorHelper(this.appointmentStatusList),
-                _step3;
+              var _iterator2 = _createForOfIteratorHelper(this.appointmentStatusList),
+                  _step2;
 
-            try {
-              for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-                var appointmentStatus = _step3.value;
+              try {
+                for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+                  var appointmentStatus = _step2.value;
 
-                if (appointmentStatus.category.categoryId == 19 && appointmentStatus.lookupId == 43) {
-                  this.appointmentStatus = appointmentStatus; //console.log("Function called")
+                  if (appointmentStatus.category.categoryId == 19 && appointmentStatus.lookupId == 43) {
+                    this.appointmentStatus = appointmentStatus; //console.log("Function called")
+                  }
                 }
+              } catch (err) {
+                _iterator2.e(err);
+              } finally {
+                _iterator2.f();
               }
-            } catch (err) {
-              _iterator3.e(err);
-            } finally {
-              _iterator3.f();
+
+              this.addAppointment.appointmentStatus = this.appointmentStatus;
+              this.modalService.open(form, {
+                size: 'lg'
+              });
             }
+          }
+        }, {
+          key: "scheduleEvent2",
+          value: function scheduleEvent2(eventSchedulerForm, appointmentTime, td) {
+            console.log(td.innerHTML.substr(1, 4));
 
-            var _iterator4 = _createForOfIteratorHelper(this.appointmentList),
-                _step4;
+            if (td.innerHTML.substr(1, 4) === "div") {
+              console.log("Schedule Event from Div is called!!!"); //this.addAppointment = this.appointmentForm.value;
 
-            try {
-              for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-                var appointment = _step4.value;
+              this.addAppointment.branch = this.appointmentForm.value.branch;
+              this.addAppointment.department = this.appointmentForm.value.department;
+              this.addAppointment.unit = this.unit;
+              this.addAppointment.doctor = this.employee;
+              this.addAppointment.patient = this.patient;
 
-                if (appointment.doctor.employeeId == this.addAppointment.doctor.employeeId) {
-                  var appointTime = new Date(appointmentTime);
-                  var fromDate = new Date(appointment.fromDate);
+              var _iterator3 = _createForOfIteratorHelper(this.appointmentStatusList),
+                  _step3;
 
-                  if (fromDate.toString() == appointTime.toString()) {
-                    var _iterator5 = _createForOfIteratorHelper(this.appointmentStatusList),
-                        _step5;
+              try {
+                for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+                  var appointmentStatus = _step3.value;
 
-                    try {
-                      for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-                        var _appointmentStatus = _step5.value;
+                  if (appointmentStatus.category.categoryId == 19 && appointmentStatus.lookupId == 43) {
+                    this.appointmentStatus = appointmentStatus; //console.log("Function called")
+                  }
+                }
+              } catch (err) {
+                _iterator3.e(err);
+              } finally {
+                _iterator3.f();
+              }
 
-                        if (_appointmentStatus.category.categoryId == 19 && _appointmentStatus.lookupId == 44) {
-                          this.appointmentStatus = _appointmentStatus; //console.log("Function called")
+              var _iterator4 = _createForOfIteratorHelper(this.appointmentList),
+                  _step4;
+
+              try {
+                for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                  var appointment = _step4.value;
+
+                  if (appointment.doctor.employeeId == this.addAppointment.doctor.employeeId) {
+                    var appointTime = new Date(appointmentTime);
+                    var fromDate = new Date(appointment.fromDate);
+
+                    if (fromDate.toString() == appointTime.toString()) {
+                      var _iterator5 = _createForOfIteratorHelper(this.appointmentStatusList),
+                          _step5;
+
+                      try {
+                        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+                          var _appointmentStatus = _step5.value;
+
+                          if (_appointmentStatus.category.categoryId == 19 && _appointmentStatus.lookupId == 44) {
+                            this.appointmentStatus = _appointmentStatus; //console.log("Function called")
+                          }
                         }
+                      } catch (err) {
+                        _iterator5.e(err);
+                      } finally {
+                        _iterator5.f();
                       }
-                    } catch (err) {
-                      _iterator5.e(err);
-                    } finally {
-                      _iterator5.f();
                     }
                   }
                 }
+              } catch (err) {
+                _iterator4.e(err);
+              } finally {
+                _iterator4.f();
               }
-            } catch (err) {
-              _iterator4.e(err);
-            } finally {
-              _iterator4.f();
+
+              if (this.addAppointment.doctor != null && this.addAppointment.patient.mrn != null) {
+                this.modalService.open(eventSchedulerForm, {
+                  size: 'lg'
+                });
+              } //console.log(appointmentTime)
+
+
+              this.addAppointment.fromDate = new Date(appointmentTime);
+              this.date = new Date(this.addAppointment.fromDate);
+              this.addAppointment.toDate = new Date(this.getToDate(this.date)); //console.log(this.date)
+              //console.log(this.addAppointment)
+            } else {
+              console.log("Button is clicked");
             }
-
-            if (this.addAppointment.doctor != null && this.addAppointment.patient.mrn != null) {
-              this.modalService.open(eventSchedulerForm, {
-                size: 'lg'
-              });
-            } //console.log(appointmentTime)
-
-
-            this.addAppointment.fromDate = new Date(appointmentTime);
-            this.date = new Date(this.addAppointment.fromDate);
-            this.addAppointment.toDate = new Date(this.getToDate(this.date)); //console.log(this.date)
-            //console.log(this.addAppointment)
           }
         }, {
           key: "getToDate",
@@ -27440,20 +27617,19 @@
         }, {
           key: "saveAppointment",
           value: function saveAppointment() {
-            var _this6 = this;
+            var _this10 = this;
 
             this.addAppointment.appointmentStatus = this.appointmentStatus;
             this.addAppointment.patient = this.patient;
             this.appointmentService.createAppointment(this.addAppointment).subscribe(function (data) {
-              console.log(data);
+              //console.log(data);
               alert("sucessfully inserted");
 
-              _this6.appointmentService.getAppointmentList().subscribe(function (data) {
-                _this6.appointmentList = data;
+              _this10.appointmentService.getAppointmentList().subscribe(function (data) {
+                _this10.appointmentList = data;
 
-                _this6.modalService.dismissAll();
+                _this10.modalService.dismissAll(); //console.warn(data);
 
-                console.warn(data);
               });
             });
           }
@@ -27541,7 +27717,7 @@
         }, {
           key: "deleteAppointment",
           value: function deleteAppointment(appoint) {
-            var _this7 = this;
+            var _this11 = this;
 
             var _iterator9 = _createForOfIteratorHelper(this.appointmentStatusList),
                 _step9;
@@ -27565,8 +27741,8 @@
             this.appointmentService.updateAppointment(this.toBeDeleteAppointment.appointmentId, this.toBeDeleteAppointment).subscribe(function (data) {
               alert("cancelled successfully");
 
-              _this7.appointmentService.getAppointmentList().subscribe(function (data) {
-                _this7.appointmentList = data;
+              _this11.appointmentService.getAppointmentList().subscribe(function (data) {
+                _this11.appointmentList = data;
               });
             });
             /*
@@ -27588,6 +27764,9 @@
         }, {
           key: "encounter",
           value: function encounter(appoint) {
+            sessionStorage.setItem('patientId', appoint.patient.mrn);
+            console.log("This is patient Id", appoint.patient.mrn);
+
             var _iterator10 = _createForOfIteratorHelper(this.appointmentStatusList),
                 _step10;
 
@@ -27613,6 +27792,56 @@
               state: appoint
             });
           }
+        }, {
+          key: "callPatientDetails",
+          value: function callPatientDetails(event) {
+            this.patient = event;
+            this.addAppointment.patient = this.patient; //console.log("This is patient from patient Demographic", event)
+            //this.appointmentForm.controls.branch.setValue(this.patient.branch.lookupId)
+          }
+        }, {
+          key: "fillData",
+          value: function fillData(appointment) {
+            //console.log("The value from appointment Form",this.appointmentForm.value.branch)
+            this.appointmentForm.controls.branch.setValue(appointment.branch.branchId);
+            this.branchId = appointment.branch.branchId;
+            this.appointmentForm.controls.department.setValue(appointment.department.departmentId);
+            this.departmentId = appointment.department.departmentId;
+            this.appointmentForm.controls.unit.setValue(appointment.unit.unitId); //this.appointmentForm.patchValue(appointment);
+
+            this.getDoctorList(appointment.unit.unitId); //console.log(this.appointmentForm.value.department)
+          }
+        }, {
+          key: "getTimeFormat",
+          value: function getTimeFormat(data) {
+            var date = new Date(data);
+            var hour = (date.getHours() < 10 ? '0' : '') + date.getHours();
+            var min = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+            var time = hour + ":" + min;
+            return time;
+          }
+        }, {
+          key: "selectClass",
+          value: function selectClass(status) {
+            switch (status) {
+              case "booked":
+                return "info";
+
+              case "confirmed":
+                return "success";
+
+              case "cancelled":
+                return "danger";
+
+              default:
+                return "info";
+            }
+          }
+        }, {
+          key: "demoFunc",
+          value: function demoFunc() {
+            console.log("Demo Function is called!!");
+          }
         }]);
 
         return NewAppointmentComponent;
@@ -27628,26 +27857,38 @@
         }, {
           type: _patient_service_patient_service__WEBPACK_IMPORTED_MODULE_9__.PatientService
         }, {
-          type: _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormBuilder
+          type: _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormBuilder
         }, {
           type: _services_appointment_service__WEBPACK_IMPORTED_MODULE_11__.AppointmentService
         }, {
-          type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__.NgbModalConfig
+          type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__.NgbModalConfig
         }, {
-          type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__.NgbModal
+          type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__.NgbModal
         }, {
           type: _master_lookup_module_services_lookup_service__WEBPACK_IMPORTED_MODULE_12__.LookupService
         }, {
-          type: _angular_router__WEBPACK_IMPORTED_MODULE_15__.Router
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_18__.Router
+        }, {
+          type: _layout_alert_alert_service__WEBPACK_IMPORTED_MODULE_13__.AlertService
+        }, {
+          type: _angular_common__WEBPACK_IMPORTED_MODULE_19__.DatePipe
+        }, {
+          type: _Common_Security_Services_common_service_service__WEBPACK_IMPORTED_MODULE_14__.CommonSecurityService
         }];
       };
 
       _NewAppointmentComponent.propDecorators = {
         patientDetails: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_16__.Input
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_20__.Input
+        }],
+        appointment: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_20__.Input
+        }],
+        isFromDoctorsWorkbench: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_20__.Input
         }]
       };
-      _NewAppointmentComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_17__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_16__.Component)({
+      _NewAppointmentComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_21__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_20__.Component)({
         selector: 'app-new-appointment',
         template: _raw_loader_new_appointment_component_html__WEBPACK_IMPORTED_MODULE_0__["default"],
         animations: [(0, _router_animations__WEBPACK_IMPORTED_MODULE_2__.routerTransition)()],
@@ -27657,10 +27898,10 @@
     },
 
     /***/
-    59542:
-    /*!****************************************************!*\
-      !*** ./src/app/appointment/masters/appointment.ts ***!
-      \****************************************************/
+    24367:
+    /*!*******************************************************************!*\
+      !*** ./src/app/appointment/pipes/search-appointment-pipe.pipe.ts ***!
+      \*******************************************************************/
 
     /***/
     function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -27672,356 +27913,10 @@
 
       __webpack_require__.d(__webpack_exports__, {
         /* harmony export */
-        "Appointment": function Appointment() {
+        "SearchAppointment": function SearchAppointment() {
           return (
             /* binding */
-            _Appointment
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var _master_masters_base_entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ../../master/masters/base-entity */
-      28685);
-      /* harmony import */
-
-
-      var _master_department_masters_department__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ../../master/department/masters/department */
-      10776);
-      /* harmony import */
-
-
-      var _master_service_center_masters_branch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ../../master/service-center/masters/branch */
-      40478);
-      /* harmony import */
-
-
-      var _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ../../master/unit-master/masters/Employee */
-      51716);
-      /* harmony import */
-
-
-      var _master_unit_master_masters_unit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! ../../master/unit-master/masters/unit */
-      56552);
-      /* harmony import */
-
-
-      var _patient_master_patient__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! ../../patient/master/patient */
-      19975);
-
-      var _Appointment = /*#__PURE__*/function (_master_masters_base_) {
-        _inherits(_Appointment, _master_masters_base_);
-
-        var _super2 = _createSuper(_Appointment);
-
-        function _Appointment() {
-          var _this8;
-
-          _classCallCheck(this, _Appointment);
-
-          _this8 = _super2.call(this);
-          _this8.branch = new _master_service_center_masters_branch__WEBPACK_IMPORTED_MODULE_2__.Branch();
-          _this8.department = new _master_department_masters_department__WEBPACK_IMPORTED_MODULE_1__.Department();
-          _this8.unit = new _master_unit_master_masters_unit__WEBPACK_IMPORTED_MODULE_4__.Unit();
-          _this8.doctor = new _master_unit_master_masters_Employee__WEBPACK_IMPORTED_MODULE_3__.Employee();
-          _this8.patient = new _patient_master_patient__WEBPACK_IMPORTED_MODULE_5__.Patient();
-          _this8.fromDate = new Date();
-          _this8.toDate = new Date();
-          _this8.appointment = "appointment";
-          _this8.appointmentDateTime = new Date();
-          _this8.visitDate = new Date();
-          return _this8;
-        }
-
-        return _Appointment;
-      }(_master_masters_base_entity__WEBPACK_IMPORTED_MODULE_0__.BaseEntity);
-      /***/
-
-    },
-
-    /***/
-    83430:
-    /*!*************************************************************!*\
-      !*** ./src/app/appointment/services/appointment.service.ts ***!
-      \*************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "AppointmentService": function AppointmentService() {
-          return (
-            /* binding */
-            _AppointmentService
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! tslib */
-      64762);
-      /* harmony import */
-
-
-      var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! @angular/common/http */
-      91841);
-      /* harmony import */
-
-
-      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! @angular/core */
-      37716);
-
-      var _AppointmentService = /*#__PURE__*/function () {
-        function AppointmentService(http) {
-          _classCallCheck(this, AppointmentService);
-
-          this.http = http;
-          this.baseUrl = "http://localhost:8080/springboot/api/v1";
-        }
-
-        _createClass(AppointmentService, [{
-          key: "getAppointmentTimeList",
-          value: function getAppointmentTimeList(startTime, endTime, interval) {
-            return this.http.get("".concat(this.baseUrl, "/appointmentTimeList/").concat(startTime, "/").concat(endTime, "/").concat(interval));
-          }
-        }, {
-          key: "createAppointment",
-          value: function createAppointment(appointment) {
-            return this.http.post("".concat(this.baseUrl, "/appointment/add"), appointment);
-          }
-        }, {
-          key: "getAppointmentList",
-          value: function getAppointmentList() {
-            return this.http.get("".concat(this.baseUrl, "/appointment/get"));
-          }
-        }, {
-          key: "updateAppointment",
-          value: function updateAppointment(appointmentId, appointment) {
-            return this.http.put("".concat(this.baseUrl, "/appointment/update/").concat(appointmentId), appointment);
-          }
-        }, {
-          key: "deleteAppointment",
-          value: function deleteAppointment(appointmentId) {
-            return this.http["delete"]("".concat(this.baseUrl, "/appointment/").concat(appointmentId));
-          }
-        }]);
-
-        return AppointmentService;
-      }();
-
-      _AppointmentService.ctorParameters = function () {
-        return [{
-          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__.HttpClient
-        }];
-      };
-
-      _AppointmentService = (0, tslib__WEBPACK_IMPORTED_MODULE_1__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_2__.Injectable)({
-        providedIn: 'root'
-      })], _AppointmentService);
-      /***/
-    },
-
-    /***/
-    51716:
-    /*!********************************************************!*\
-      !*** ./src/app/master/unit-master/masters/Employee.ts ***!
-      \********************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "Employee": function Employee() {
-          return (
-            /* binding */
-            _Employee
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var _country_category_masters_country__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ../../country-category/masters/country */
-      60139);
-      /* harmony import */
-
-
-      var _department_masters_department__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ../../department/masters/department */
-      10776);
-      /* harmony import */
-
-
-      var _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ../../lookup-module/masters/lookup-entity */
-      11697);
-      /* harmony import */
-
-
-      var _masters_base_entity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ../../masters/base-entity */
-      28685);
-      /* harmony import */
-
-
-      var _service_center_masters_branch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! ../../service-center/masters/branch */
-      40478);
-      /* harmony import */
-
-
-      var _enterpriseUser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! ./enterpriseUser */
-      30063);
-      /* harmony import */
-
-
-      var _PrefixMaster__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-      /*! ./PrefixMaster */
-      71277);
-
-      var _Employee = /*#__PURE__*/function (_masters_base_entity_) {
-        _inherits(_Employee, _masters_base_entity_);
-
-        var _super3 = _createSuper(_Employee);
-
-        function _Employee() {
-          var _this9;
-
-          _classCallCheck(this, _Employee);
-
-          _this9 = _super3.apply(this, arguments);
-          _this9.dob = new Date();
-          _this9.employeeStatus = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.gender = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.maritalStatus = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.empNationality = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.nationality = new _country_category_masters_country__WEBPACK_IMPORTED_MODULE_0__.Country();
-          _this9.empCategory = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.empEmployeementStatus = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.department = new _department_masters_department__WEBPACK_IMPORTED_MODULE_1__.Department();
-          _this9.bloodGroup = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.empHealthCardValidUpto = new Date();
-          _this9.empDesignation = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          _this9.user = new _enterpriseUser__WEBPACK_IMPORTED_MODULE_5__.EnterpriseUser();
-          _this9.branch = new _service_center_masters_branch__WEBPACK_IMPORTED_MODULE_4__.Branch();
-          _this9.validDate = new Date();
-          _this9.empPrefix = new _PrefixMaster__WEBPACK_IMPORTED_MODULE_6__.PrefixMaster();
-          _this9.slot = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-          return _this9;
-        }
-
-        return _Employee;
-      }(_masters_base_entity__WEBPACK_IMPORTED_MODULE_3__.BaseEntity);
-      /***/
-
-    },
-
-    /***/
-    30063:
-    /*!**************************************************************!*\
-      !*** ./src/app/master/unit-master/masters/enterpriseUser.ts ***!
-      \**************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "EnterpriseUser": function EnterpriseUser() {
-          return (
-            /* binding */
-            _EnterpriseUser
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var _department_masters_department__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ../../department/masters/department */
-      10776);
-      /* harmony import */
-
-
-      var _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ../../lookup-module/masters/lookup-entity */
-      11697);
-      /* harmony import */
-
-
-      var _service_center_masters_branch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ../../service-center/masters/branch */
-      40478);
-
-      var _EnterpriseUser = function _EnterpriseUser() {
-        _classCallCheck(this, _EnterpriseUser);
-
-        this.branch = new _service_center_masters_branch__WEBPACK_IMPORTED_MODULE_2__.Branch();
-        this.department = new _department_masters_department__WEBPACK_IMPORTED_MODULE_0__.Department();
-        this.userType = new _lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_1__.LookupEntity();
-      };
-      /***/
-
-    },
-
-    /***/
-    99796:
-    /*!***************************************************************************!*\
-      !*** ./src/app/patient/patient-control/patient-control-routing.module.ts ***!
-      \***************************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "PatientControlRoutingModule": function PatientControlRoutingModule() {
-          return (
-            /* binding */
-            _PatientControlRoutingModule
+            _SearchAppointment
           );
         }
         /* harmony export */
@@ -28039,237 +27934,38 @@
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
       37716);
-      /* harmony import */
 
-
-      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! @angular/router */
-      39895);
-
-      var routes = [];
-
-      var _PatientControlRoutingModule = function PatientControlRoutingModule() {
-        _classCallCheck(this, PatientControlRoutingModule);
-      };
-
-      _PatientControlRoutingModule = (0, tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule)({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule.forChild(routes)],
-        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule]
-      })], _PatientControlRoutingModule);
-      /***/
-    },
-
-    /***/
-    21949:
-    /*!**********************************************************************!*\
-      !*** ./src/app/patient/patient-control/patient-control.component.ts ***!
-      \**********************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "PatientControlComponent": function PatientControlComponent() {
-          return (
-            /* binding */
-            _PatientControlComponent
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-      /*! tslib */
-      64762);
-      /* harmony import */
-
-
-      var _raw_loader_patient_control_component_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! !raw-loader!./patient-control.component.html */
-      35719);
-      /* harmony import */
-
-
-      var _patient_control_component_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ./patient-control.component.css */
-      93786);
-      /* harmony import */
-
-
-      var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-      /*! @angular/core */
-      37716);
-      /* harmony import */
-
-
-      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! @ng-bootstrap/ng-bootstrap */
-      12664);
-      /* harmony import */
-
-
-      var _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ../../master/lookup-module/masters/lookup-entity */
-      11697);
-      /* harmony import */
-
-
-      var _patient_master_patient__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ../../patient/master/patient */
-      19975);
-      /* harmony import */
-
-
-      var _service_patient_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! ../service/patient.service */
-      42766);
-
-      var _PatientControlComponent = /*#__PURE__*/function () {
-        function PatientControlComponent(modalService, patientService) {
-          _classCallCheck(this, PatientControlComponent);
-
-          this.modalService = modalService;
-          this.patientService = patientService;
-          this.patientDetails = new _patient_master_patient__WEBPACK_IMPORTED_MODULE_3__.Patient();
-          this.patient = new _patient_master_patient__WEBPACK_IMPORTED_MODULE_3__.Patient();
-          this.patientList = [];
+      var _SearchAppointment = /*#__PURE__*/function () {
+        function SearchAppointment() {
+          _classCallCheck(this, SearchAppointment);
         }
 
-        _createClass(PatientControlComponent, [{
-          key: "ngOnInit",
-          value: function ngOnInit() {
-            this.reloadData();
-          }
-        }, {
-          key: "reloadData",
-          value: function reloadData() {
-            var _this10 = this;
-
-            this.patientService.getPatientList().subscribe(function (data) {
-              _this10.patientList = data;
-              console.log(_this10.patientList);
-            });
-          }
-        }, {
-          key: "onAdd",
-          value: function onAdd(patients) {
-            this.patient = patients;
-
-            if (this.patient.visitType == null) {
-              this.patient.visitType = new _master_lookup_module_masters_lookup_entity__WEBPACK_IMPORTED_MODULE_2__.LookupEntity();
-              this.patient.visitType.lookupValue = "firstVisit";
-              this.patient.visitType.lookupId = 47;
-              this.modalService.dismissAll();
+        _createClass(SearchAppointment, [{
+          key: "transform",
+          value: function transform(value, args) {
+            if (!args) {
+              return value;
             }
-          }
-        }, {
-          key: "onCreate",
-          value: function onCreate(container) {
-            this.modalService.open(container);
+
+            return value.filter(function (val) {
+              args = args.toLowerCase(); //console.log(val.fromDate.toString().toLowerCase())
+              //console.log( val.fromDate.toString().toLowerCase().includes(args))
+
+              var dateParts = val.fromDate.split("-");
+              var jsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2].substr(0, 2));
+              console.log(jsDate.toString());
+              var rVal = val.appointmentId.toString().includes(args) || val.patient.mrn.toLowerCase().includes(args) || val.doctor.employeeFullName.toLowerCase().includes(args) || jsDate.toString().toLowerCase().includes(args);
+              return rVal;
+            });
           }
         }]);
 
-        return PatientControlComponent;
+        return SearchAppointment;
       }();
 
-      _PatientControlComponent.ctorParameters = function () {
-        return [{
-          type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModal
-        }, {
-          type: _service_patient_service__WEBPACK_IMPORTED_MODULE_4__.PatientService
-        }];
-      };
-
-      _PatientControlComponent.propDecorators = {
-        patientDetails: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_6__.Output
-        }],
-        patient: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_6__.Input
-        }]
-      };
-      _PatientControlComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_7__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_6__.Component)({
-        selector: 'app-patient-control',
-        template: _raw_loader_patient_control_component_html__WEBPACK_IMPORTED_MODULE_0__["default"],
-        styles: [_patient_control_component_css__WEBPACK_IMPORTED_MODULE_1__["default"]]
-      })], _PatientControlComponent);
-      /***/
-    },
-
-    /***/
-    9448:
-    /*!*******************************************************************!*\
-      !*** ./src/app/patient/patient-control/patient-control.module.ts ***!
-      \*******************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "PatientControlModule": function PatientControlModule() {
-          return (
-            /* binding */
-            _PatientControlModule
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! tslib */
-      64762);
-      /* harmony import */
-
-
-      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! @angular/core */
-      37716);
-      /* harmony import */
-
-
-      var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! @angular/common */
-      38583);
-      /* harmony import */
-
-
-      var _patient_control_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ./patient-control-routing.module */
-      99796);
-      /* harmony import */
-
-
-      var _patient_control_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ./patient-control.component */
-      21949);
-
-      var _PatientControlModule = function PatientControlModule() {
-        _classCallCheck(this, PatientControlModule);
-      };
-
-      _PatientControlModule = (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
-        declarations: [_patient_control_component__WEBPACK_IMPORTED_MODULE_1__.PatientControlComponent],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _patient_control_routing_module__WEBPACK_IMPORTED_MODULE_0__.PatientControlRoutingModule],
-        exports: [_patient_control_component__WEBPACK_IMPORTED_MODULE_1__.PatientControlComponent]
-      })], _PatientControlModule);
+      _SearchAppointment = (0, tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Pipe)({
+        name: 'searchAppointment'
+      })], _SearchAppointment);
       /***/
     },
 
@@ -28377,25 +28073,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = ".inputEvent {\r\n\tbackground-color: #e7f5b0;\r\n}\r\ntd{\r\n\tz-index: 1;\r\n}\r\nlabel{\r\n\tz-index: 2;\r\n}\r\n.fc-day-grid-container.fc-scroller {\r\n    height: auto!important;\r\n    overflow-y: auto;\r\n}\r\n.fc-view-container *, .fc-view-container ::after, .fc-view-container ::before {\r\n    box-sizing:border-box!important;\r\n}\r\n#the-form input[name=\"doctor\"] {\r\n    position: absolute;\r\n    left: -999em;\r\n }\r\n#the-form div label {\r\n    display: inline-block; \r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n }\r\n#the-form div label:first-of-type  {\r\n   margin-right: 0.25em;\r\n   width: 1em;\r\n   height: 1em;\r\n   background-image: url('checkbox-bg.png');\r\n   background-size: 2em auto;\r\n }\r\ninput[name=\"doctor\"]:checked~label:first-of-type {\r\n    background-position: -1em 0;\r\n }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5ldy1hcHBvaW50bWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MseUJBQXlCO0FBQzFCO0FBQ0E7Q0FDQyxVQUFVO0FBQ1g7QUFDQTtDQUNDLFVBQVU7QUFDWDtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksK0JBQStCO0FBQ25DO0FBUUE7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtDQUNmO0FBRUQ7SUFDSSxxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLGVBQWU7Q0FDbEI7QUFFRDtHQUNHLG9CQUFvQjtHQUNwQixVQUFVO0dBQ1YsV0FBVztHQUNYLHdDQUFvRDtHQUNwRCx5QkFBeUI7Q0FDM0I7QUFFRDtJQUNJLDJCQUEyQjtDQUM5QiIsImZpbGUiOiJuZXctYXBwb2ludG1lbnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbnB1dEV2ZW50IHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjZTdmNWIwO1xyXG59XHJcbnRke1xyXG5cdHotaW5kZXg6IDE7XHJcbn1cclxubGFiZWx7XHJcblx0ei1pbmRleDogMjtcclxufVxyXG4uZmMtZGF5LWdyaWQtY29udGFpbmVyLmZjLXNjcm9sbGVyIHtcclxuICAgIGhlaWdodDogYXV0byFpbXBvcnRhbnQ7XHJcbiAgICBvdmVyZmxvdy15OiBhdXRvO1xyXG59XHJcbi5mYy12aWV3LWNvbnRhaW5lciAqLCAuZmMtdmlldy1jb250YWluZXIgOjphZnRlciwgLmZjLXZpZXctY29udGFpbmVyIDo6YmVmb3JlIHtcclxuICAgIGJveC1zaXppbmc6Ym9yZGVyLWJveCFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcbiN0aGUtZm9ybSBpbnB1dFtuYW1lPVwiZG9jdG9yXCJdIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IC05OTllbTtcclxuIH1cclxuXHJcbiN0aGUtZm9ybSBkaXYgbGFiZWwge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrOyBcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiB9XHJcblxyXG4jdGhlLWZvcm0gZGl2IGxhYmVsOmZpcnN0LW9mLXR5cGUgIHtcclxuICAgbWFyZ2luLXJpZ2h0OiAwLjI1ZW07XHJcbiAgIHdpZHRoOiAxZW07XHJcbiAgIGhlaWdodDogMWVtO1xyXG4gICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoYXNzZXRzXFxpbWFnZXNcXGNoZWNrYm94LWJnLnBuZyk7XHJcbiAgIGJhY2tncm91bmQtc2l6ZTogMmVtIGF1dG87XHJcbiB9XHJcblxyXG5pbnB1dFtuYW1lPVwiZG9jdG9yXCJdOmNoZWNrZWR+bGFiZWw6Zmlyc3Qtb2YtdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAtMWVtIDA7XHJcbiB9Il19 */";
-      /***/
-    },
-
-    /***/
-    93786:
-    /*!***********************************************************************!*\
-      !*** ./src/app/patient/patient-control/patient-control.component.css ***!
-      \***********************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony default export */
-
-
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwYXRpZW50LWNvbnRyb2wuY29tcG9uZW50LmNzcyJ9 */";
+      __webpack_exports__["default"] = ".inputEvent {\r\n\tbackground-color: #e7f5b0;\r\n}\r\ntd{\r\n\tz-index: 1;\r\n}\r\nlabel{\r\n\tz-index: 2;\r\n}\r\n.fc-day-grid-container.fc-scroller {\r\n    height: auto!important;\r\n    overflow-y: auto;\r\n}\r\n.fc-view-container *, .fc-view-container ::after, .fc-view-container ::before {\r\n    box-sizing:border-box!important;\r\n}\r\n#the-form input[name=\"doctor\"] {\r\n    position: absolute;\r\n    left: -999em;\r\n }\r\n#the-form div label {\r\n    display: inline-block; \r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n }\r\n#the-form div label:first-of-type  {\r\n   margin-right: 0.25em;\r\n   width: 1em;\r\n   height: 1em;\r\n   background-image: url('checkbox-bg.png');\r\n   background-size: 2em auto;\r\n }\r\ninput[name=\"doctor\"]:checked~label:first-of-type {\r\n    background-position: -1em 0;\r\n }\r\n.mat-icon {\r\n    font-size:20px;\r\n    line-height:15px;\r\n    max-height:25px;\r\n}\r\n.mat-icon-button i, .mat-icon-button .mat-icon {\r\n    line-height: 10px;\r\n}\r\n \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5ldy1hcHBvaW50bWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MseUJBQXlCO0FBQzFCO0FBQ0E7Q0FDQyxVQUFVO0FBQ1g7QUFDQTtDQUNDLFVBQVU7QUFDWDtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksK0JBQStCO0FBQ25DO0FBUUE7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtDQUNmO0FBRUQ7SUFDSSxxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLGVBQWU7Q0FDbEI7QUFFRDtHQUNHLG9CQUFvQjtHQUNwQixVQUFVO0dBQ1YsV0FBVztHQUNYLHdDQUFvRDtHQUNwRCx5QkFBeUI7Q0FDM0I7QUFFRDtJQUNJLDJCQUEyQjtDQUM5QjtBQUlEO0lBQ0ksY0FBYztJQUNkLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckIiLCJmaWxlIjoibmV3LWFwcG9pbnRtZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW5wdXRFdmVudCB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogI2U3ZjViMDtcclxufVxyXG50ZHtcclxuXHR6LWluZGV4OiAxO1xyXG59XHJcbmxhYmVse1xyXG5cdHotaW5kZXg6IDI7XHJcbn1cclxuLmZjLWRheS1ncmlkLWNvbnRhaW5lci5mYy1zY3JvbGxlciB7XHJcbiAgICBoZWlnaHQ6IGF1dG8haW1wb3J0YW50O1xyXG4gICAgb3ZlcmZsb3cteTogYXV0bztcclxufVxyXG4uZmMtdmlldy1jb250YWluZXIgKiwgLmZjLXZpZXctY29udGFpbmVyIDo6YWZ0ZXIsIC5mYy12aWV3LWNvbnRhaW5lciA6OmJlZm9yZSB7XHJcbiAgICBib3gtc2l6aW5nOmJvcmRlci1ib3ghaW1wb3J0YW50O1xyXG59XHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4jdGhlLWZvcm0gaW5wdXRbbmFtZT1cImRvY3RvclwiXSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAtOTk5ZW07XHJcbiB9XHJcblxyXG4jdGhlLWZvcm0gZGl2IGxhYmVsIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgXHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gfVxyXG5cclxuI3RoZS1mb3JtIGRpdiBsYWJlbDpmaXJzdC1vZi10eXBlICB7XHJcbiAgIG1hcmdpbi1yaWdodDogMC4yNWVtO1xyXG4gICB3aWR0aDogMWVtO1xyXG4gICBoZWlnaHQ6IDFlbTtcclxuICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGFzc2V0c1xcaW1hZ2VzXFxjaGVja2JveC1iZy5wbmcpO1xyXG4gICBiYWNrZ3JvdW5kLXNpemU6IDJlbSBhdXRvO1xyXG4gfVxyXG5cclxuaW5wdXRbbmFtZT1cImRvY3RvclwiXTpjaGVja2VkfmxhYmVsOmZpcnN0LW9mLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogLTFlbSAwO1xyXG4gfVxyXG4gXHJcblxyXG5cclxuLm1hdC1pY29uIHtcclxuICAgIGZvbnQtc2l6ZToyMHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6MTVweDtcclxuICAgIG1heC1oZWlnaHQ6MjVweDtcclxufVxyXG4ubWF0LWljb24tYnV0dG9uIGksIC5tYXQtaWNvbi1idXR0b24gLm1hdC1pY29uIHtcclxuICAgIGxpbmUtaGVpZ2h0OiAxMHB4O1xyXG59XHJcbiAiXX0= */";
       /***/
     },
 
@@ -28431,7 +28109,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<div [@routerTransition]>\n\t<app-page-header [mainhead]=\"'Appointments List'\" [mainheadLink]=\"'/registration'\" [heading]=\"'Appointments'\" [icon]=\"'fa-user'\"></app-page-header>\n </div>\n<div class =\"container-fluid p-0 m-0\">\n\t<div class = \"card justify-content-center p-0 m-0\">\n\t\t<div class =\"card-head \">\n\t\t\t<nav class = \"navbar bg-dark text-white text-white\">\n\t\t\t\t<h2>Appointments List</h2>\n\t\t\t\t<input type = \"text\" placeholder = \"search\">\n\t\t\t\t<a routerLink = \"/appointment/new-appointment\"><button value= \"new\" class =\"btn btn-success\"> new</button></a>\n\t\t\t</nav>\n\t\t</div>\n\t\t<div class =\"card-body p-0 m-0\">\n\t\t\t<table class = \"table  table-responsive w-100\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr >\n\t\t\t\t\t\t<th>Appointment NO</th>\n\t\t\t\t\t\t<th >Patient MRNo.</th>\n\t\t\t\t\t\t<th>Branch</th>\n\t\t\t\t\t\t<th>Department</th>\n\t\t\t\t\t\t<th>Unit</th>\n\t\t\t\t\t\t<th>Doctor</th>\n\t\t\t\t\t\t<th>Appointment Date</th>\n\t\t\t\t\t\t<th>Appointment Time</th>\n\t\t\t\t\t\t<th>Action</th>\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t \t<tr *ngFor=\"let appointment of appointmentList |slice: (page-1) * pageSize : page * pageSize\">\n\t\t\t\t    \t<td>{{appointment.appointmentId}}</td>\n\t\t\t\t        <td>{{appointment.patient.mrn}}</td>\n\t\t\t\t        <td>{{appointment.branch.branchName}}</td>\n\t\t\t\t        <td>{{appointment.department.departmentName}}</td>\n\t\t\t\t\t\t<td>{{appointment.unit.unitName}}</td>\n\t\t\t\t\t\t<td>{{appointment.doctor.employeeFullName}}</td>\n\t\t\t\t\t\t<td>{{appointment.fromDate|date: 'medium'}}</td>\n\t\t\t\t\t\t<td>{{appointment.appointmentDateTime}}</td>\n\t\t\t\t\t\t<td class= \"text-center\">\n\t\t\t\t\t\t\t<button class = \"btn btn-dark btn-sm float-center\"  routerLink = \"/appointment/new-appointment\" ><i class = \"fa fa-edit fa-1x\"></i></button>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t</div>\n\t\t<div class = \"card-footer bg-info p-0 m-0 \" >\n\t\t<div class = \"row justify-content-center\">\n\t\t\t<ngb-pagination [collectionSize]=\"len\" [(page)]=\"page\" [pageSize] = \"pageSize\"  [rotate]=\"true\"  [ellipses]=\"false\" class = \"col-md-9\"></ngb-pagination>\n\t\t\t<a routerLink = \"/appointment\" class = \"m-2\"><button class = \"btn-warning\" >Back to Appointment Dashboard</button></a>\n\t\t</div>\n\t</div>\n\t</div>\n</div>";
+      __webpack_exports__["default"] = "<div [@routerTransition]>\n\t<app-page-header [mainhead]=\"'Appointments List'\" [mainheadLink]=\"'/registration'\" [heading]=\"'Appointments'\" [icon]=\"'fa-user'\"></app-page-header>\n </div>\n<div class =\"container-fluid p-0 m-0\">\n\t<div class = \"card justify-content-center p-0 m-0\">\n\t\t<div class =\"card-head \">\n\t\t\t<nav class = \"navbar bg-dark text-white text-white\">\n\t\t\t\t<h2>Appointments List</h2>\n\t\t\t\t<input type = \"text\" placeholder = \"search\" [(ngModel)] = \"searchAppointment\">\n\t\t\t\t<a routerLink = \"/appointment/new-appointment\"><button value= \"new\" class =\"btn btn-success\"> new</button></a>\n\t\t\t</nav>\n\t\t</div>\n\t\t<div class =\"card-body p-0 m-0\">\n\t\t\t<table class = \"table  table-responsive table-striped w-100\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr >\n\t\t\t\t\t\t<th>Appointment NO</th>\n\t\t\t\t\t\t<th >Patient MRNo.</th>\n\t\t\t\t\t\t<th>Branch</th>\n\t\t\t\t\t\t<th>Department</th>\n\t\t\t\t\t\t<th>Unit</th>\n\t\t\t\t\t\t<th>Doctor</th>\n\t\t\t\t\t\t<th>Appointment Date</th>\n\t\t\t\t\t\t<th>Appointment Time</th>\n\t\t\t\t\t\t<th>Action</th>\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t \t<tr *ngFor=\"let appointment of appointmentList |searchAppointment:searchAppointment |slice: (page-1) * pageSize : page * pageSize\">\n\t\t\t\t    \t<td>{{appointment.appointmentId}}</td>\n\t\t\t\t        <td>{{appointment.patient.mrn}}</td>\n\t\t\t\t        <td>{{appointment.branch.branchName}}</td>\n\t\t\t\t        <td>{{appointment.department.departmentName}}</td>\n\t\t\t\t\t\t<td>{{appointment.unit.unitName}}</td>\n\t\t\t\t\t\t<td>{{appointment.doctor.employeeFullName}}</td>\n\t\t\t\t\t\t<td>{{appointment.fromDate|date: 'longDate'}}</td>\n\t\t\t\t\t\t<td>{{appointment.appointmentDateTime | date:'mediumTime'}}</td>\n\t\t\t\t\t\t<td class= \"text-center\">\n\t\t\t\t\t\t\t<button class = \"btn btn-dark btn-sm float-center\" (click) = \"gotoAppointment(appointment)\"  ><i class = \"fa fa-edit fa-1x\"></i></button>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t</div>\n\t\t<div class = \"card-footer bg-info p-0 m-0 \" >\n\t\t<div class = \"row justify-content-center\">\n\t\t\t<ngb-pagination [collectionSize]=\"len\" [(page)]=\"page\" [pageSize] = \"pageSize\"  [rotate]=\"true\"  [ellipses]=\"false\" class = \"col-md-9\"></ngb-pagination>\n\t\t\t<a routerLink = \"/appointment\" class = \"m-2\"><button class = \"btn-warning\" >Back to Appointment Dashboard</button></a>\n\t\t</div>\n\t</div>\n\t</div>\n</div>";
       /***/
     },
 
@@ -28449,25 +28127,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<div [@routerTransition]>\r\n\t<app-page-header [mainhead]=\"'Appointment'\"\r\n\t\t[mainheadLink]=\"'/appointment'\" [heading]=\"'New Appointment'\"\r\n\t\t[icon]=\"'fa-bar-chart-o'\"></app-page-header>\r\n</div>\r\n<nav class = \"navbar bg-secondary text-white\">\r\n\t<h3>New Appointment</h3>\r\n\t<button  class = \"btn btn-success\" routerLink= \"/appointment/appointment-list\">Appointment List</button>\r\n</nav>\r\n\r\n<div class=\"bg-light border border-dark\">\r\n\t<app-patient-control [patient]=\"patient\"></app-patient-control>\r\n</div>\r\n<div class = \"card\">\r\n\t<div class = \"card-header p-0 m-0\">\r\n\t <form [formGroup]= \"appointmentForm\">\r\n\t\t<nav class = \"navbar bg-dark text-white  container-fluid text-left\">\r\n\t\t\t<label class = \"col-md-1 p-0 m-0\">Branch :</label>\r\n\t\t\t<div class = \"col-md-2\">\r\n\t\t\t\t<select class = \"form-control\" formControlName=\"branch\" id = \"branch\" (ngModelChange)= \"getDepartmentList($event)\">\r\n\t\t\t\t\t<option [ngValue] = \"null\" >--------Select--------</option>\r\n\t\t\t\t\t<option *ngFor = \"let branch of branchList\" [ngValue] = \"branch\" id = \"branch\">{{branch.branchName}}</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-md-2\">Department :</label>\r\n\t\t\t<div class = \"col-md-3 p-0 m-0\">\r\n\t\t\t\t<select  class = \"form-control\" formControlName = \"department\" id = \"department\" (ngModelChange) = \"getUnitList($event)\">\r\n\t\t\t\t\t<option [ngValue] = \"null\" >--------Select--------</option>\r\n\t\t\t\t\t<ng-container *ngFor = \"let departments of departmentList\">\r\n\t\t\t\t\t\t<option  [ngValue]= \"departments\" *ngIf = \"departments.site.branchId == branchId\" id = \"department\">{{departments.departmentName}}</option>\r\n\t\t\t\t\t</ng-container>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-md-1\">Unit :</label>\r\n\t\t\t<div class = \"col-md-3\">\r\n\t\t\t\t<select class = \"form-control\"  formControlName = \"unit\" id = \"unit\" (ngModelChange)= \"getDoctorList($event)\">\r\n\t\t\t\t\t<option [ngValue] = \"null\" >--------Select--------</option>\r\n\t\t\t\t\t<ng-container *ngFor = \"let unit of unitList\">\r\n\t\t\t\t\t\t<option  [ngValue] =\"unit\" id= \"unit\" *ngIf = \"unit.department.departmentId == departmentId\">{{unit.unitName}}</option>\r\n\t\t\t\t\t</ng-container>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\t\r\n\t\t</nav>\r\n\t\t<ng-template #tool>Show Doctor Names</ng-template>\r\n\t\t<div class = \"row p-0 m-0 bg-info text-white d-flex justify-content-center\">\r\n\t\t\t<div class = \"col-md-2 p-2\">\r\n\t\t\t\t<label [ngbTooltip] = \"tool\">Doctor Names:</label>\r\n\t\t\t</div>\r\n\t\t\t<div class = \"col-md-10 p-2\">\r\n\t\t\t\t\t<div class = \"row\" id=\"the-form\" >\r\n\t\t\t\t\t <div *ngFor = \"let  employee of unitEmployeeMappingList\">\r\n\t\t\t\t\t\t<input  id=\"doctor{{employee.employee.employeeName}}\"  value = \"0\" type = 'radio' [value] = \"employee.employee\" formControlName = \"doctor\" name = \"doctor\"  (ngModelChange) = \"showDoctorName(employee.employee)\"/>\r\n\t\t\t\t\t\t<label for=\"doctor{{employee.employee.employeeName}}\"></label>\r\n\t\t\t\t\t\t<label  for=\"doctor{{employee.employee.employeeName}}\">{{employee.employee.employeeName}}</label>\r\n\t\t\t\t\t</div>&nbsp;\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\t</form>\r\n\t</div>\r\n\t<div class =\"card-body\">\r\n\t\t<div class = \"row\" >\r\n\t\t\t<div class = \"col-md-8\">\r\n\t\t\t\t<div class = \"row justify-content-center text-center\">\r\n\t\t\t\t\t<label>Date : -{{dateStr}}</label>\r\n\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class = \"row px-2\">\r\n\t\t\t\t\t<table class= \"table\" border = 1>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<th class = \"col-md-1\"></th>\r\n\t\t\t\t\t\t\t<th class = \"col-md-11\">{{employee.employeeName}}</th>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr *ngFor = \"let appointmentTime of appointmentTimeSlot\">\r\n\t\t\t\t\t\t\t<td class = \"col-md-1 p-0 justify-content-center text-center\">{{appointmentTime}}</td>\r\n\t\t\t\t\t\t\t<td class = \"col-md-11 p-0 m-0 inputEvent  border-dark\" onMouseOver=\"this.style.cursor='pointer'\" (click) = \"scheduleEvent(eventSchedulerForm,(returnDate(appointmentTime)))\">\r\n\t\t\t\t\t\t\t\t<label class = \" col-md-5 p-0 m-0 text-muted\">\r\n\t\t\t\t\t\t\t\t\t{{returnDate(appointmentTime)| date: 'medium'}}&nbsp;&nbsp;</label>\r\n\t\t\t\t\t\t\t\t\t<ng-container *ngFor = \"let appoint of appointmentList text-dark\">\r\n\t\t\t\t\t\t\t\t\t\t<label *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&(appoint.appointmentStatus.lookupId == 43)\" class = \"p-0 m-0 bg-info\" placement=\"right\" ngbTooltip = \"booked\">\r\n\t\t\t\t\t\t\t\t\t\t\t{{appoint.patient.firstName}}&nbsp;{{appoint.patient.middleName}}&nbsp;{{appoint.patient.lastName}},&nbsp;mrno : {{appoint.patient.mrn}},\r\n\t\t\t\t\t\t\t\t\t\t\t&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<label *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&(appoint.appointmentStatus.lookupId == 48)\" class = \"p-0 m-0 bg-success\"  placement=\"right\" ngbTooltip = \"confermed\">\r\n\t\t\t\t\t\t\t\t\t\t\t{{appoint.patient.firstName}}&nbsp;{{appoint.patient.middleName}}&nbsp;{{appoint.patient.lastName}},&nbsp;mrno : {{appoint.patient.mrn}},\r\n\t\t\t\t\t\t\t\t\t\t\t&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</ng-container>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<label class =\"text-right p-0 m-0\" *ngFor = \"let appoint of appointmentList\" >\r\n\t\t\t\t\t\t\t\t\t<button *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&((appoint.appointmentStatus.lookupId == 43) || (appoint.appointmentStatus.lookupId == 48))\" (click) = \"deleteAppointment(appoint)\" class =\"btn btn-danger btn-sm m-0 p-0\">cancel</button>\r\n\t\t\t\t\t\t\t\t\t<button *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&((appoint.appointmentStatus.lookupId == 43) || (appoint.appointmentStatus.lookupId == 48))\" (click) = \"encounter(appoint)\" class =\"btn btn-success btn-sm m-0 p-0\">Encounter</button>\r\n\r\n\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t\t<div class = \"col-md-1\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class = \"col-md-4 h6\">\r\n\t\t\t \t<full-calendar [options]=\"calendarOptions\"></full-calendar> \r\n\t\t\t<div>\r\n\t\t\t<div class =\"card\">\r\n\t\t\t\t<div class = \"card-head bg-dark text-white text-center \">\r\n\t\t\t\t\t<h3>Doctors List  :</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class =\"card-body justify-content p-0 m-1\">\r\n\t\t\t\t\t<table class = \"table m-0 p-0\" cellpadding = 0 cellspacting = 0 border = 1>\r\n\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t<tr class= \"p-0 m-0\">\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Doctor Name</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Booked</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Confermed</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Waiting</th>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t<tr class= \"p-0 m-0\" *ngFor = \"let  employee of unitEmployeeMappingList\">\r\n\t\t\t\t\t\t\t\t<td >{{employee.employee.employeeName}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{booked(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{confirmed(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{waiting(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class = \"card-head bg-dark text-white text-center\">\r\n\t\t\t\t\t<h3 >Waiting List  :</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class =\"card-body justify-content p-0 m-1 \">\r\n\t\t\t\t\t<table class = \"table\" border = 1>\r\n\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t<tr >\r\n\t\t\t\t\t\t\t\t<th>Mrno</th>\r\n\t\t\t\t\t\t\t\t<th>Patient Name</th>\r\n\t\t\t\t\t\t\t\t<th>Time</th>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t<tr *ngFor = \"let  patient of newPatientList\">\r\n\t\t\t\t\t\t\t\t<td>{{patient[0].mrn}}}</td>\r\n\t\t\t\t\t\t\t\t<td>{{patient[0].firstName}}&nbsp;{{patient[0].lastName}}</td>\r\n\t\t\t\t\t\t\t\t<td>{{(patient[1].getHours() < 10 ? '0' : '') + patient[1].getHours()}}:{{(patient[1].getMinutes() < 10 ? '0':'')+patient[1].getMinutes()}}</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t </div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class = \"card-footer bg-info p-0 m-0 \" >\r\n\t\t<div class = \"row justify-content-center\">\r\n\t\t\t<a routerLink = \"/appointment\" class = \"m-2\"><button class = \"btn-warning\" >Back to Appointment Dashboard</button></a>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<ng-template #eventSchedulerForm let-c=\"close\" let-d=\"dismiss\">\r\n<div class =\"container\">\r\n<div class = \"card mt-3 mb-3\">\r\n\t<div class=\"card-header m-0 p-0\">\r\n\t\t<nav class = \"navbar bg-dark text-white w-100\" >\r\n\t\t\t<h3 >Add Appointment</h3>\r\n\t\t\t<button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n\t      \t\t<span aria-hidden=\"true\">&times;</span>\r\n\t    \t</button>\r\n\t\t</nav>\r\n  \t</div>\r\n  \t<div class =\"card-body border-1\">\r\n\t\t<div class = \"row\">\r\n\t\t\t<label class = \"col-md-3 mr-0\">Branch : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 m-0\">\r\n\t\t\t\t<label >{{addAppointment.branch.branchName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Department : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.department.departmentName}}</label>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-lg-3 mr-0\"  >Unit : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.unit.unitName}}</label>\r\n\t\t\t</div><hr>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Doctor Name:</label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.doctor.employeeName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Patient Name : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{patient.firstName}}&nbsp;{{patient.lastName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Appointment Type: </label>\r\n\t\t\t<div class = \"col-md-3   p-0 ml-0\">\r\n\t\t\t\t<select class = \"col-md-12\" [(ngModel)] = \"addAppointment.appointmentStatusType\">\r\n\t\t\t\t\t<option [ngValue] = \"null\">----Select----</option>\r\n\t\t\t\t\t<option *ngFor = \"let appointmentStatusTyp of appointmentStatusTypeList\" [ngValue] = \"appointmentStatusTyp\">{{appointmentStatusTyp.lookupValue}}</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Start Date : </label>\r\n\t\t\t<div  class = \"col-lg-3  p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.fromDate | date: 'medium'}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >End Date</label>\r\n\t\t\t<div class = \"col-lg-3  p-0 ml-0\" >\r\n\t\t\t\t<label>{{addAppointment.toDate| date: 'medium'}}</label>\r\n\t\t\t</div>\r\n\t\t </div>\r\n\t</div>\r\n\t<div class=\"card-footer justify-content-right text-right\">\r\n\t\t <button class = \"btn btn-success\" (click) = 'saveAppointment()'>Save</button>&nbsp;\r\n\t    <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Save click')\">Exit</button>\r\n\t</div>\r\n\t</div>\r\n</div>\r\n</ng-template>\r\n\r\n\r\n\r\n\r\n\r\n<!--  Tooltip section goes here -->\r\n\r\n\t\r\n ";
-      /***/
-    },
-
-    /***/
-    35719:
-    /*!**************************************************************************************************************!*\
-      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/patient/patient-control/patient-control.component.html ***!
-      \**************************************************************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony default export */
-
-
-      __webpack_exports__["default"] = "<nav class=\"navbar bg-dark text-white text-center\">\n  <h3 style = \"font-family: Sanse Serif\"> Patient Details</h3>\n     <button class=\"button\" class=\"ml-auto btn btn-success\" (click)=\"onCreate(container)\">add patient</button>\n</nav>\n<div class=\"row\">\n\t<div class=\"col-md-2 pt-2 pl-4\" >\n  \t\t<label for=\"file-input\" class = \"border border-dark\">\n   \t\t\t<i class=\"fa fas fa-user-circle fa-5x \"></i>\n  \t\t</label>\n\t\t<input id=\"file-input\" type=\"file\" style=\"display:none\"/>\n\t</div>\n\t<div class=\"col-md-10 pt-3\">\n\t\t<div class= \"row\">\n\t\t\t<label class = \"col-md-2 pl-4 \"><b>Mr No.:</b></label>\n\t\t\t<div class = \"col-md-2 pl-4\">\n\t\t\t\t<label>{{patient.mrn}}</label>\n\t\t\t</div>\n\t\t\t<label class = \"col-md-2 pl-4\"><b>Patient Name:</b></label>\n\t\t\t<div class = \"col-md-2 pl-4\">\n\t\t\t\t<label >{{patient.firstName}}&nbsp;{{patient.lastName}}</label>\n\t\t\t</div>\n\t\t\t<label class = \"col-md-2 pl-4\"><b>Gender:</b></label>\n\t\t\t<div class = \"col-md-2 pl-4\">\n\t\t\t\t<label >{{patient.gender.lookupValue}}</label>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<label class = \"col-md-2 pl-4\"><b>Age:</b></label>\n\t\t\t<div class = \"col-md-2 pl-4\">\n\t\t\t\t<label>{{patient.age}}</label>\n\t\t\t</div>\n\t\t\t\n\t\t\t<label class = \"col-md-2 pl-4\"><b>Visit type:</b></label>\n\t\t\t<div class = \"col-md-2 pl-4\">\n\t\t\t\t<label>{{patient.visitType.lookupValue}}</label>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Patient section goes here -->\n<ng-template #container let-c=\"close\"> \n<nav class = \"navbar bg-dark text-white\">\n\t<h2>Patient List</h2>\n\t<button type=\"button\" class=\"btn btn-outline-danger\" (click)=\"c('Save click')\">Exit</button>\n</nav>\n<table class=\"table\" style=\"background-color:Aquamarine\">\n  <thead class=\"table-dark\">\n    <tr>\n      <th scope=\"col\">Patient Name</th>\n      <th scope=\"col\">MR No</th>\n      <th scope=\"col\">Gender</th>\n      <th scope=\"col\">Actions</th>\n    </tr>\n  </thead>\n  <tbody >\n    <tr *ngFor=\"let patients of patientList\">\n      <th >{{patients.firstName}}&nbsp;{{patients.lastName}}</th>\n      <td>{{patients.mrn}}</td>\n      <td>{{patients.gender.lookupValue}}</td>\n      <td><button  class=\"btn btn-success\" (click)=\"onAdd(patients)\">Add</button></td>\n    </tr>\n  </tbody>\n</table>\n\n</ng-template>\n\n";
+      __webpack_exports__["default"] = "<div [@routerTransition] *ngIf =\"!isFromDoctorsWorkbench\">\r\n\t<app-page-header [mainhead]=\"'Appointment'\"\r\n\t\t[mainheadLink]=\"'/appointment'\" [heading]=\"'New Appointment'\"\r\n\t\t[icon]=\"'fa-bar-chart-o'\"></app-page-header>\r\n\t\t<nav class = \"navbar bg-dark text-white\">\r\n\t<h3>New Appointment</h3>\r\n\t<button  class = \"btn btn-success\" routerLink= \"/appointment/appointment-list\">Appointment List</button>\r\n</nav>\r\n</div>\r\n\r\n\r\n<div class=\"bg-light border border-dark\">\r\n\t<app-patient-control  (patientDetails) = \"callPatientDetails($event)\"></app-patient-control>\r\n</div>\r\n<div class = \"card\">\r\n\t<div class = \"card-header p-0 m-0\">\r\n\t <form [formGroup]= \"appointmentForm\">\r\n\t\t<nav class = \"navbar bg-Secondary text-dark container-fluid text-left\">\r\n\t\t\t<label class = \"col-md-1 p-0 m-0\">Branch :</label>\r\n\t\t\t<div class = \"col-md-2\">\r\n\t\t\t\t<select class = \"form-control\" formControlName=\"branch\" id = \"branch\" (change)= \"getDepartmentList($event.target.value)\">\r\n\t\t\t\t\t<option [ngValue] = \"null\" >--------Select--------</option>\r\n\t\t\t\t\t<option *ngFor = \"let branch of branchList\"  [value] = \"branch.id\"  id = \"branch\">{{branch.branchName}}</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-md-2\">Department :</label>\r\n\t\t\t<div class = \"col-md-3 p-0 m-0\">\r\n\t\t\t\t<select  class = \"form-control\" formControlName = \"department\" id = \"department\" (change) = \"getUnitList($event.target.value)\">\r\n\t\t\t\t\t<option [ngValue] = \"null\" >--------Select--------</option>\r\n\t\t\t\t\t<ng-container *ngFor = \"let departments of departmentList\">\r\n\t\t\t\t\t\t<option   [value] = \"departments.departmentId\" id = \"department\">{{departments.departmentName}}</option>\r\n\t\t\t\t\t</ng-container>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-md-1\">Unit :</label>\r\n\t\t\t<div class = \"col-md-3\">\r\n\t\t\t\t<select class = \"form-control\"  formControlName = \"unit\" id = \"unit\" (ngModelChange)= \"getDoctorList($event)\">\r\n\t\t\t\t\t<option [ngValue] = null >--------Select--------</option>\r\n\t\t\t\t\t<option  [ngValue] =\"unit\" [value] = \"unit.unitId\" id= \"unit\" *ngFor = \"let unit of unitList\">{{unit.unitName}}</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t\t\r\n\t\t</nav>\r\n\t\t<ng-template #tool>Show Doctor Names</ng-template>\r\n\t\t<div class = \"row p-0 m-0 bg-info text-white d-flex justify-content-center\">\r\n\t\t\t<div class = \"col-md-2 p-2\">\r\n\t\t\t\t<label [ngbTooltip] = \"tool\">Doctor Names:</label>\r\n\t\t\t</div>\r\n\t\t\t<div class = \"col-md-10 p-2\">\r\n\t\t\t\t\t<div class = \"row\" id=\"the-form\" >\r\n\t\t\t\t\t <div *ngFor = \"let  employee of unitEmployeeMappingList\">\r\n\t\t\t\t\t\t<input  id=\"doctor{{employee.employee.employeeName}}\"  type = 'radio' [value] = \"employee.employee.employeeId\" formControlName = \"doctor\" name = \"doctor\"  (ngModelChange) = \"showDoctorName(employee.employee)\"/>\r\n\t\t\t\t\t\t<label for=\"doctor{{employee.employee.employeeName}}\"></label>\r\n\t\t\t\t\t\t<label  for=\"doctor{{employee.employee.employeeName}}\">{{employee.employee.employeeName}}</label>\r\n\t\t\t\t\t</div>&nbsp;\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\t</form>\r\n\t</div>\r\n\t<div class =\"card-body\">\r\n\t\t<div class = \"row\" >\r\n\t\t\t<div class = \"col-md-9\">\r\n\t\t\t\t<div class = \"row justify-content-center text-center\">\r\n\t\t\t\t\t<label>Date : -{{startDate |date:'medium'}}</label>\r\n\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class = \"row px-2\">\r\n\t\t\t\t\t<table class= \"table\" border = 1>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<th class = \"col-xs-1\"></th>\r\n\t\t\t\t\t\t\t<th class = \"col-xs-11\">{{employee.employeeName}}</th>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<!-- <tr *ngFor = \"let appointmentTime of appointmentTimeSlot\">\r\n\t\t\t\t\t\t\t<td class = \"col-md-1 p-0 justify-content-center text-center\">{{appointmentTime}}</td>\r\n\t\t\t\t\t\t\t<td class = \"col-md-11 p-0 m-0 inputEvent  border-dark\" onMouseOver=\"this.style.cursor='pointer'\" (click) = \"scheduleEvent(eventSchedulerForm,(returnDate(appointmentTime)))\">\r\n\t\t\t\t\t\t\t\t<label class = \" col-md-5 p-0 m-0 text-muted\">\r\n\t\t\t\t\t\t\t\t\t{{returnDate(appointmentTime)| date: 'medium'}}&nbsp;&nbsp;</label>\r\n\t\t\t\t\t\t\t\t\t<ng-container *ngFor = \"let appoint of appointmentList text-dark\">\r\n\t\t\t\t\t\t\t\t\t\t<label *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&(appoint.appointmentStatus.lookupId == 43)\" class = \"p-0 m-0 bg-info\" placement=\"right\" ngbTooltip = \"booked\">\r\n\t\t\t\t\t\t\t\t\t\t\t{{appoint.patient.firstName}}&nbsp;{{appoint.patient.middleName}}&nbsp;{{appoint.patient.lastName}},&nbsp;mrno : {{appoint.patient.mrn}},\r\n\t\t\t\t\t\t\t\t\t\t\t&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<label *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&(appoint.appointmentStatus.lookupId == 48)\" class = \"p-0 m-0 bg-success\"  placement=\"right\" ngbTooltip = \"confermed\">\r\n\t\t\t\t\t\t\t\t\t\t\t{{appoint.patient.firstName}}&nbsp;{{appoint.patient.middleName}}&nbsp;{{appoint.patient.lastName}},&nbsp;mrno : {{appoint.patient.mrn}},\r\n\t\t\t\t\t\t\t\t\t\t\t&nbsp;&nbsp;\r\n\t\t\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</ng-container>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<label class =\"text-right p-0 m-0\" *ngFor = \"let appoint of appointmentList\" >\r\n\t\t\t\t\t\t\t\t\t<button *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&((appoint.appointmentStatus.lookupId == 43) || (appoint.appointmentStatus.lookupId == 48))\" (click) = \"deleteAppointment(appoint)\" class =\"btn btn-danger btn-sm m-0 p-0\">cancel</button>\r\n\t\t\t\t\t\t\t\t\t<button *ngIf = \"(((returnDate(appointmentTime))| date: 'medium') == (appoint.fromDate | date: 'medium'))&&(employee.employeeName == appoint.doctor.employeeName)&&((appoint.appointmentStatus.lookupId == 43) || (appoint.appointmentStatus.lookupId == 48))\" (click) = \"encounter(appoint)\" class =\"btn btn-success btn-sm m-0 p-0\">Encounter</button>\r\n\r\n\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr> -->\r\n\t\t\t\t\t\t<tr *ngFor = \"let schedule of schedulerList\"><!-- getTimeFormat(schedule.slotDate) -->\r\n\t\t\t\t\t\t\t<td class = \"col-sm-1 p-0 justify-content-center text-center\">{{schedule.slotDate | date: 'HH:MM a'}}</td>\r\n\t\t\t\t\t\t\t<td class = \"col-sm-11 p-0 m-0 inputEvent   border-dark\" onMouseOver=\"this.style.cursor='pointer';\" style =\"line-height: 30px;\"  (click) = \"scheduleEvent(eventSchedulerForm,schedule)\">\r\n\t\t\t\t\t\t\t\t<!-- <label class = \" col-md-5 p-0 m-0 text-muted\">\r\n\t\t\t\t\t\t\t\t\t{{schedule.slotDate| date: 'medium'}}&nbsp;&nbsp;</label> \r\n\t\t\t\t\t\t\t\t\t<label *ngIf = \"schedule.appointments.length >0\">{{schedule.appointments[0].fromDate | date:'shortTime'}}-{{schedule.appointments[0].fromDate| date:'shortTime'}}({{schedule.appointments[0].doctor.slot.lookupValue}})</label>\r\n -->\t\t\t\t\t\t\t\t\t<ng-container *ngFor = \"let appoint of schedule.appointments text-dark\">\r\n \t\t\t\t\t\t\t\t\t\t<div class=\"row  navbar-dark text-white bg-{{selectClass(appoint.appointmentStatus.lookupValue)}} p-0 m-0 float-center\">\r\n \t\t\t\t\t\t\t\t\t\t\t<div class=\" col-md-2 col-sm-3 p-0\">\r\n \t\t\t\t\t\t\t\t\t\t\t\t<label>{{appoint.patient.mrn}}</label>&nbsp;\r\n \t\t\t\t\t\t\t\t\t\t\t</div>\r\n \t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-2 col-sm-3 p-0\">\r\n \t\t\t\t\t\t\t\t\t\t\t\t<label>{{appoint.patient.firstName}}&nbsp;{{appoint.patient.middleName}}&nbsp;{{appoint.patient.lastName}}</label>\r\n \t\t\t\t\t\t\t\t\t\t\t</div>\r\n \t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-2 col-sm-3 p-0 \">\r\n \t\t\t\t\t\t\t\t\t\t\t\t<label>{{appoint.appointmentStatusType.lookupValue}}</label>\r\n \t\t\t\t\t\t\t\t\t\t\t</div>\r\n \t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-2 col-sm-3 p-0\">\r\n \t\t\t\t\t\t\t\t\t\t\t\t<label>{{appoint.appointmentStatus.lookupValue}}</label>\r\n \t\t\t\t\t\t\t\t\t\t\t</div>\r\n \t\t\t\t\t\t\t\t\t\t\t<div class =\"col-md-4 p-0\">\r\n \t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>mail</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n \t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>message</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>perm_phone_msg</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>phone_forwarded</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>event_available</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<button mat-icon-button  matTooltip =\"message\" class=\"icon-display pt-0 m-0\" (click)=\"demoFunc();\"\r\n\t\t\t\t\t\t\t\t\t\t\t\t\taria-label=\"Example icon-button with menu icon\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mat-icon>info</mat-icon>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\r\n \t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</ng-container>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr> \r\n\t\t\t\t\t</table>\r\n\t\t\t\t\t<div class = \"col-md-1\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class = \"col-md-3\">\r\n\t\t\t \t<!-- <full-calendar class =\"table-sm\" [options]=\"calendarOptions\"></full-calendar>  -->\r\n\t\t\t \t<mat-card class=\"demo-inline-calendar-card\"> \r\n\t\t\t\t  <mat-calendar (selectedChange)=\"handleDateClick($event)\"></mat-calendar>\r\n\t\t\t\t</mat-card>\r\n\t\t\t<div>\r\n\t\t\t<div class =\"card\">\r\n\t\t\t\t<div class = \"card-head bg-dark text-white text-center \">\r\n\t\t\t\t\t<h3>Doctors List  :</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class =\"card-body justify-content p-0 m-1\">\r\n\t\t\t\t\t<table class = \"table table-sm table-responsive p-0 w-100\" cellpadding = 0 cellspacting = 0 border = 1>\r\n\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t<tr class= \"p-0 m-0\">\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Doctor Name</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Booked</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Confirm</th>\r\n\t\t\t\t\t\t\t\t<th class= \"p-0 m-0\">Waiting</th>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t<tr class= \"p-0 m-0\" *ngFor = \"let  employee of unitEmployeeMappingList\">\r\n\t\t\t\t\t\t\t\t<td >{{employee.employee.employeeName}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{booked(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{confirmed(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t\t<td >{{waiting(employee.employee.employeeId)}}</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class = \"card-head  text-white text-center \">\r\n\t\t\t\t\t<h3 class = \"bg-dark\">Legends</h3>\r\n\t\t\t\t\t<div class=\"rich-panel float-center\">\r\n\t\t\t\t\t\t<div class=\"rich-panel-body\">\t\t\t\t\t\r\n<<<<<<< .mine\r\n\t\t\t\t\t\t\t<table class =\"table\">\t\t\t\t\t\t\r\n||||||| .r10405\r\n\t\t\t\t\t\t\t<table style=\"width: 45%;border: 1px solid #908D8D\">\t\t\t\t\t\t\r\n=======\r\n\t\t\t\t\t\t\t<table class =\"table table-sm\">\t\t\t\t\t\t\r\n>>>>>>> .r10477\r\n\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;\" class = \"bg-info\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"color: black; \">Booked</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;\" class = \"bg-success\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"border: 1px solid #908D8D; color: black;\">Confirmed</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;\" class = \"bg-danger\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"border: 1px solid #908D8D; color: black;\">Cancel</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;background-color:#7b9c99\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"border: 1px solid #908D8D; color: black;\">NOSHOW</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;background-color:#f4f4f7\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"border: 1px solid #908D8D; color: black;\">Not Available</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"width: 35%;background-color:#136ecf\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td style=\"border: 1px solid #908D8D; color: black;\">Reschedule</td>\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<h3 class = \"bg-dark\" >Waiting List  :</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class =\"card-body justify-content p-0 m-1 \">\r\n\t\t\t\t\t<table class = \"table table-sm\" border = 1>\r\n\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t<tr >\r\n\t\t\t\t\t\t\t\t<th>Mrno</th>\r\n\t\t\t\t\t\t\t\t<th>Patient Name</th>\r\n\t\t\t\t\t\t\t\t<th>Time</th>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t<tr *ngFor = \"let  patient of newPatientList\">\r\n\t\t\t\t\t\t\t\t<td>{{patient[1].mrn}}</td>\r\n\t\t\t\t\t\t\t\t<td>{{patient[1].firstName}}&nbsp;{{patient[1].lastName}}</td>\r\n\t\t\t\t\t\t\t\t<td>{{(patient[0].getHours() < 10 ? '0' : '') + patient[0].getHours()}}:{{(patient[0].getMinutes() < 10 ? '0':'')+patient[0].getMinutes()}}</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t </div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class = \"card-footer bg-info p-0 m-0 \" >\r\n\t\t<div class = \"row justify-content-center\">\r\n\t\t\t<a routerLink = \"/appointment\" class = \"m-2\"><button class = \"btn-warning\" >Back to Appointment Dashboard</button></a>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<ng-template #eventSchedulerForm let-c=\"close\" let-d=\"dismiss\">\r\n<div class =\"container\">\r\n<div class = \"card mt-3 mb-3\">\r\n\t<div class=\"card-header m-0 p-0\">\r\n\t\t<nav class = \"navbar bg-dark text-white w-100\" >\r\n\t\t\t<h3 >Add Appointment</h3>\r\n\t\t\t<button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n\t      \t\t<span aria-hidden=\"true\">&times;</span>\r\n\t    \t</button>\r\n\t\t</nav>\r\n  \t</div>\r\n  \t<div class =\"card-body border-1\">\r\n\t\t<div class = \"row\">\r\n\t\t\t<label class = \"col-md-3 mr-0\">Branch : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 m-0\">\r\n\t\t\t\t<label >{{addAppointment.branch.branchName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Department : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.department.departmentName}}</label>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<label class = \"col-lg-3 mr-0\"  >Unit : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.unit.unitName}}</label>\r\n\t\t\t</div><hr>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Doctor Name:</label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.doctor.employeeName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Patient Name : </label>\r\n\t\t\t<div class = \"col-md-3 p-0 ml-0\">\r\n\t\t\t\t<label>{{patient.firstName}}&nbsp;{{patient.lastName}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Appointment Type: </label>\r\n\t\t\t<div class = \"col-md-3   p-0 ml-0\">\r\n\t\t\t\t<select class = \"col-md-12\" [(ngModel)] = \"addAppointment.appointmentStatusType\">\r\n\t\t\t\t\t<option [ngValue] = \"null\">----Select----</option>\r\n\t\t\t\t\t<option *ngFor = \"let appointmentStatusTyp of appointmentStatusTypeList\" [ngValue] = \"appointmentStatusTyp\">{{appointmentStatusTyp.lookupValue}}</option>\r\n\t\t\t\t</select>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >Start Date : </label>\r\n\t\t\t<div  class = \"col-lg-3  p-0 ml-0\">\r\n\t\t\t\t<label>{{addAppointment.fromDate | date: 'medium'}}</label>\r\n\t\t\t</div>\r\n\t\t\t<label class = \"col-lg-3 mr-0\" >End Date</label>\r\n\t\t\t<div class = \"col-lg-3  p-0 ml-0\" >\r\n\t\t\t\t<label>{{addAppointment.toDate| date: 'medium'}}</label>\r\n\t\t\t</div>\r\n\t\t </div>\r\n\t</div>\r\n\t<div class=\"card-footer justify-content-right text-right\">\r\n\t\t <button class = \"btn btn-success\" (click) = 'saveAppointment()'>Save</button>&nbsp;\r\n\t    <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Save click')\">Exit</button>\r\n\t</div>\r\n\t</div>\r\n</div>\r\n</ng-template>\r\n\r\n\r\n\r\n\r\n\r\n<!--  Tooltip section goes here -->\r\n\r\n\t\r\n ";
       /***/
     }
   }]);

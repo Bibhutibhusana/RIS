@@ -5,7 +5,7 @@
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  (self["webpackChunksb_admin_bs4_angular_9"] = self["webpackChunksb_admin_bs4_angular_9"] || []).push([["src_app_access-denied_access-denied_module_ts"], {
+  (self["webpackChunkElitePro"] = self["webpackChunkElitePro"] || []).push([["src_app_access-denied_access-denied_module_ts"], {
     /***/
     58853:
     /*!***************************************************************!*\

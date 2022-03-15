@@ -5,7 +5,7 @@
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  (self["webpackChunksb_admin_bs4_angular_9"] = self["webpackChunksb_admin_bs4_angular_9"] || []).push([["main"], {
+  (self["webpackChunkElitePro"] = self["webpackChunkElitePro"] || []).push([["main"], {
     /***/
     98255:
     /*!*******************************************************!*\
@@ -62,46 +62,52 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! @angular/router */
       39895);
       /* harmony import */
 
 
-      var _shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      var _practice_field_practice_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ./practice-field/practice.component */
+      54593);
+      /* harmony import */
+
+
+      var _shared__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./shared */
       51679);
 
       var routes = [{
         path: '',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_layout_layout_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_layout_layout_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! ./layout/layout.module */
           4805)).then(function (m) {
             return m.LayoutModule;
           });
         },
-        canActivate: [_shared__WEBPACK_IMPORTED_MODULE_0__.AuthGuard]
+        canActivate: [_shared__WEBPACK_IMPORTED_MODULE_1__.AuthGuard]
       }, {
         path: 'login',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_login_login_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_login_login_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! ./login/login.module */
           80107)).then(function (m) {
             return m.LoginModule;
@@ -110,9 +116,9 @@
       }, {
         path: 'signup',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_signup_signup_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_signup_signup_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! ./signup/signup.module */
           77648)).then(function (m) {
             return m.SignupModule;
@@ -141,6 +147,28 @@
           });
         }
       }, {
+        path: 'barcode-generator',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_barcode-generator_barcode-generator_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./barcode-generator/barcode-generator.module */
+          65347)).then(function (m) {
+            return m.BarcodeGeneratorModule;
+          });
+        }
+      }, {
+        path: 'payment',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_payment-gateway_payment-gateway_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./payment-gateway/payment-gateway.module */
+          75502)).then(function (m) {
+            return m.PaymentGatewayModule;
+          });
+        }
+      }, {
         path: 'not-found',
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
@@ -152,6 +180,9 @@
           });
         }
       }, {
+        path: 'practice',
+        component: _practice_field_practice_component__WEBPACK_IMPORTED_MODULE_0__.PracticeComponent
+      }, {
         path: '**',
         redirectTo: 'not-found'
       }];
@@ -160,11 +191,11 @@
         _classCallCheck(this, AppRoutingModule);
       };
 
-      _AppRoutingModule = (0, tslib__WEBPACK_IMPORTED_MODULE_1__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_2__.NgModule)({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule.forRoot(routes, {
+      _AppRoutingModule = (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes, {
           relativeLinkResolution: 'legacy'
         })],
-        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule]
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule]
       })], _AppRoutingModule);
       /***/
     },
@@ -272,37 +303,37 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! @angular/common */
       38583);
       /* harmony import */
 
 
-      var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! @angular/common/http */
       91841);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! @angular/platform-browser */
       39075);
       /* harmony import */
 
 
-      var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! @angular/platform-browser/animations */
       75835);
       /* harmony import */
@@ -332,20 +363,269 @@
       /* harmony import */
 
 
-      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! @ng-bootstrap/ng-bootstrap */
       12664);
+      /* harmony import */
+
+
+      var _material_material_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./material/material.module */
+      90898);
+      /* harmony import */
+
+
+      var _practice_field_practice_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./practice-field/practice.component */
+      54593);
 
       var _AppModule = function AppModule() {
         _classCallCheck(this, AppModule);
       };
 
-      _AppModule = (0, tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_5__.NgModule)({
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule, _shared_modules_language_translation_language_translation_module__WEBPACK_IMPORTED_MODULE_3__.LanguageTranslationModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_10__.NgbModule],
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent],
+      _AppModule = (0, tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_7__.NgModule)({
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.CommonModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__.BrowserAnimationsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClientModule, _shared_modules_language_translation_language_translation_module__WEBPACK_IMPORTED_MODULE_3__.LanguageTranslationModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_12__.NgbModule, _material_material_module__WEBPACK_IMPORTED_MODULE_4__.MaterialModule],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _practice_field_practice_component__WEBPACK_IMPORTED_MODULE_5__.PracticeComponent],
         providers: [_shared__WEBPACK_IMPORTED_MODULE_2__.AuthGuard],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
       })], _AppModule);
+      /***/
+    },
+
+    /***/
+    90898:
+    /*!*********************************************!*\
+      !*** ./src/app/material/material.module.ts ***!
+      \*********************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "MaterialModule": function MaterialModule() {
+          return (
+            /* binding */
+            _MaterialModule
+          );
+        }
+        /* harmony export */
+
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+      /*! tslib */
+      64762);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+      /*! @angular/core */
+      37716);
+      /* harmony import */
+
+
+      var _angular_material_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/material/button */
+      51095);
+      /* harmony import */
+
+
+      var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/material/expansion */
+      1562);
+      /* harmony import */
+
+
+      var _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/material/divider */
+      1769);
+      /* harmony import */
+
+
+      var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/material/form-field */
+      98295);
+      /* harmony import */
+
+
+      var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! @angular/material/datepicker */
+      43220);
+      /* harmony import */
+
+
+      var _angular_material_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! @angular/material/input */
+      83166);
+      /* harmony import */
+
+
+      var _angular_material_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! @angular/material/select */
+      67441);
+      /* harmony import */
+
+
+      var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! @angular/material/toolbar */
+      12522);
+      /* harmony import */
+
+
+      var _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      /*! @angular/material/icon */
+      76627);
+      /* harmony import */
+
+
+      var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      /*! @angular/material/tabs */
+      65939);
+      /* harmony import */
+
+
+      var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      /*! @angular/flex-layout */
+      25830);
+      /* harmony import */
+
+
+      var _angular_material_table__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      /*! @angular/material/table */
+      32091);
+      /* harmony import */
+
+
+      var _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+      /*! @angular/material/sort */
+      11494);
+      /* harmony import */
+
+
+      var _angular_material_tree__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      /*! @angular/material/tree */
+      1933);
+      /* harmony import */
+
+
+      var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      /*! @angular/material/checkbox */
+      7539);
+      /* harmony import */
+
+
+      var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      /*! @angular/material/tooltip */
+      11436);
+      /* harmony import */
+
+
+      var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      /*! @angular/material/dialog */
+      22238);
+      /* harmony import */
+
+
+      var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+      /*! @angular/material/autocomplete */
+      21554);
+      /* harmony import */
+
+
+      var _angular_material_card__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+      /*! @angular/material/card */
+      93738);
+      /* harmony import */
+
+
+      var _angular_material_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+      /*! @angular/material/core */
+      5015);
+
+      var material = [_angular_material_button__WEBPACK_IMPORTED_MODULE_0__.MatButtonModule, _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__.MatExpansionModule, _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__.MatDividerModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_3__.MatFormFieldModule, _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_4__.MatDatepickerModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_5__.MatInputModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_6__.MatSelectModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__.MatToolbarModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__.MatIconModule, _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__.MatTabsModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__.FlexLayoutModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_11__.MatTableModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__.MatSortModule, _angular_material_tree__WEBPACK_IMPORTED_MODULE_13__.MatTreeModule, _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_14__.MatCheckboxModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_15__.MatTooltipModule, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__.MatDialogModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_17__.MatAutocompleteModule, _angular_material_card__WEBPACK_IMPORTED_MODULE_18__.MatCardModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_19__.MatNativeDateModule];
+
+      var _MaterialModule = function MaterialModule() {
+        _classCallCheck(this, MaterialModule);
+      };
+
+      _MaterialModule = (0, tslib__WEBPACK_IMPORTED_MODULE_20__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_21__.NgModule)({
+        imports: [material],
+        exports: [material]
+      })], _MaterialModule);
+      /***/
+    },
+
+    /***/
+    54593:
+    /*!******************************************************!*\
+      !*** ./src/app/practice-field/practice.component.ts ***!
+      \******************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "PracticeComponent": function PracticeComponent() {
+          return (
+            /* binding */
+            _PracticeComponent
+          );
+        }
+        /* harmony export */
+
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! tslib */
+      64762);
+      /* harmony import */
+
+
+      var _raw_loader_practice_component_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! !raw-loader!./practice.component.html */
+      74411);
+      /* harmony import */
+
+
+      var _practice_component_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! ./practice.component.css */
+      98123);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/core */
+      37716);
+
+      var _PracticeComponent = function PracticeComponent() {
+        _classCallCheck(this, PracticeComponent);
+      };
+
+      _PracticeComponent.ctorParameters = function () {
+        return [];
+      };
+
+      _PracticeComponent = (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
+        selector: 'app-practice',
+        template: _raw_loader_practice_component_html__WEBPACK_IMPORTED_MODULE_0__["default"],
+        styles: [_practice_component_css__WEBPACK_IMPORTED_MODULE_1__["default"]]
+      })], _PracticeComponent);
       /***/
     },
 
@@ -792,10 +1072,10 @@
 
         this.translate = translate; // Gets Default language from browser if available, otherwise set English ad default
 
-        this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de', 'zh-CHS']);
+        this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de', 'zh-CHS', 'ar']);
         this.translate.setDefaultLang('en');
         var browserLang = this.translate.getBrowserLang();
-        this.translate.use(browserLang.match(/en|fr|ur|es|it|fa|de|zh-CHS/) ? browserLang : 'en');
+        this.translate.use(browserLang.match(/en|fr|ur|es|it|fa|de|zh-CHS|ar/) ? browserLang : 'en');
       };
 
       _LanguageTranslationModule.ctorParameters = function () {
@@ -1052,7 +1332,7 @@
         }, {
           key: "navigation",
           value: function navigation(paramLink) {
-            console.log(paramLink);
+            //console.log(paramLink)
             this.router.navigate([paramLink]); //,{ mainhead:"Registration",mainheadLink : '/registration' , heading :'Patient'}
           }
         }]);
@@ -1306,6 +1586,24 @@
     },
 
     /***/
+    98123:
+    /*!*******************************************************!*\
+      !*** ./src/app/practice-field/practice.component.css ***!
+      \*******************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwcmFjdGljZS5jb21wb25lbnQuY3NzIn0= */";
+      /***/
+    },
+
+    /***/
     43069:
     /*!************************************!*\
       !*** ./src/app/app.component.scss ***!
@@ -1319,7 +1617,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = ".table th, .table td {\n  padding: 0.3rem;\n  vertical-align: center;\n  border-top: 1px solid #dee2e6;\n}\n\n.pagination {\n  padding: 0;\n  display: flex;\n  padding-left: 0;\n  list-style: none;\n  border-radius: 0.25rem;\n  margin: 0;\n}\n\n* {\n  font-size: 14px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGVBQUE7RUFDQSxzQkFBQTtFQUNBLDZCQUFBO0FBQ0o7O0FBQ0E7RUFDSSxVQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHNCQUFBO0VBQ0EsU0FBQTtBQUVKOztBQUFBO0VBQ0MsZUFBQTtBQUdEIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YWJsZSB0aCwgLnRhYmxlIHRkIHtcclxuICAgIHBhZGRpbmc6IC4zMHJlbTtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBjZW50ZXI7XHJcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgI2RlZTJlNjtcclxufVxyXG4ucGFnaW5hdGlvbiB7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHBhZGRpbmctbGVmdDogMDtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xyXG4gICAgbWFyZ2luOiAwO1xyXG59XHJcbip7XHJcblx0Zm9udC1zaXplOiAxNHB4IDtcclxufSJdfQ== */";
+      __webpack_exports__["default"] = ".table th, .table td {\n  padding: 0.3rem;\n  vertical-align: center;\n  border-top: 1px solid #dee2e6;\n}\n\n.pagination {\n  padding: 0;\n  display: flex;\n  padding-left: 0;\n  list-style: none;\n  border-radius: 0.25rem;\n  margin: 0;\n}\n\n* {\n  font-size: 14px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGVBQUE7RUFDQSxzQkFBQTtFQUNBLDZCQUFBO0FBQ0o7O0FBQ0E7RUFDSSxVQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHNCQUFBO0VBQ0EsU0FBQTtBQUVKOztBQUFBO0VBQ0MsZUFBQTtBQUdEIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YWJsZSB0aCwgLnRhYmxlIHRkIHtcclxuICAgIHBhZGRpbmc6IC4zMHJlbTtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBjZW50ZXI7XHJcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgI2RlZTJlNjtcclxufVxyXG4ucGFnaW5hdGlvbiB7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHBhZGRpbmctbGVmdDogMDtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xyXG4gICAgbWFyZ2luOiAwO1xyXG59XHJcbip7XHJcblx0Zm9udC1zaXplOiAxNHB4IDtcclxufVxyXG4iXX0= */";
       /***/
     },
 
@@ -1373,7 +1671,25 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<router-outlet></router-outlet>\n";
+      __webpack_exports__["default"] = "<router-outlet></router-outlet>\n ";
+      /***/
+    },
+
+    /***/
+    74411:
+    /*!**********************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/practice-field/practice.component.html ***!
+      \**********************************************************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<div  class=\"row bg-info m-0 p-0\">\r\n\t<div  class=\"col-md-1\">\r\n\t\t<input  type=\"text\" id=\"file-input\"\r\n\t\t\tname=\"file-input\" class=\"d-none\"><label\r\n\t\t\t for=\"file-input\" class=\"ml-1\"><img\r\n\t\t\t src=\"assets/images/patient1.gif\"\r\n\t\t\tstyle=\"width: 60px; height: 60px;\"\r\n\t\t\tclass=\"w-60 h-60 m-1 pt-1 border border-dark bg-light\"></label>\r\n\t</div>\r\n\t<div  class=\"col-md-10 mt-2 m-0\">\r\n\t\t<div  class=\"row justify-content-between\">\r\n\t\t\t<div  class=\"col-md-3 col-sm-6 mr-0 mt-0 p-0\">\r\n\t\t\t\t<label><b>Mr\r\n\t\t\t\t\t\tNo.:</b></label>&nbsp; <label  style=\"color: yellow;\">MRN_2021_00308</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6 m-0 p-0 \">\r\n\t\t\t\t<label   ><b   >\r\n\t\t\t\t\t\tName:</b></label>&nbsp; <label  style=\"color: yellow;\">Rohit\r\n\t\t\t\t\t&nbsp;Sharma</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6 m-0 p-0 \">\r\n\t\t\t\t<label   ><b   >Gender:</b></label>&nbsp;\r\n\t\t\t\t<label  style=\"color: yellow;\">Female</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6 m-0 p-0 \">\r\n\t\t\t\t<label  style=\"font-weight: bold\">Allergic\r\n\t\t\t\t\tType :</label> &nbsp; <label   \r\n\t\t\t\t\tstyle=\"color: yellow; padding-left: 5px;\">To be\r\n\t\t\t\t\tedited..</label>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div  style=\"border-top: 1px solid #fff\"\r\n\t\t\tclass=\"row justify-content-between pt-1\">\r\n\t\t\t<div  class=\"col-md-3 col-sm-6\">\r\n\t\t\t\t<label   ><b   >Phone\r\n\t\t\t\t\t\tNo:</b></label>&nbsp; <label  style=\"color: yellow;\">98976383</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6\">\r\n\t\t\t\t<label  style=\"font-weight: bold\">Visit\r\n\t\t\t\t\tType :</label>&nbsp; <label  style=\"color: yellow;\">FirstVisit</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6\">\r\n\t\t\t\t<label   ><b   >Age:</b></label>&nbsp;\r\n\t\t\t\t<label  style=\"color: yellow;\">28</label>\r\n\t\t\t</div>\r\n\t\t\t<div  class=\"col-md-3 col-sm-6\">\r\n\t\t\t\t<label  style=\"font-weight: bold\">Nationality:</label>&nbsp;\r\n\t\t\t\t<label   \r\n\t\t\t\t\tstyle=\"color: yellow; padding-left: 5px;\">Indian</label>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div  style=\"padding: 25px 0px 0px 5px\"\r\n\t\tclass=\"col-md-0.5\">\r\n\t\t<button  style=\"font-size: 13px\"\r\n\t\t\tclass=\"btn btn-success\">Change</button>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!-- \r\n\r\n<div\r\n\tclass=\"fc-event fc-event-vert fc-corner-top fc-corner-bottom followupconsultantcalendarcss ui-draggable ui-resizable\"\r\n\tstyle=\"position: absolute; z-index: 8; top: 62px; left: 559.9px; width: 493.9px; height: 29px;\">\r\n\t<a><span id=\"DMM50000048927\" class=\"fc-event-bg\"\r\n\t\tstyle=\"background-color: #19c0cc\"></span><span id=\"DMM50000048927\"\r\n\t\tclass=\"fc-event-title\" style=\"background-color: #19c0cc; float: right\">Visit\r\n\t\t\tStatus : Booked</span><span id=\"DMM50000048927\" class=\"fc-event-title\"\r\n\t\tstyle=\"background-color: white; float: right; margin-right: 20px;\"></span><span\r\n\t\tid=\"DMM50000048927\" class=\"fc-event-title\"\r\n\t\tstyle=\"background-color: #19c0cc; float: right; clear: right;\"></span><span\r\n\t\tid=\"DMM50000048927\" class=\"fc-event-time multiColumnDayAgenda\"\r\n\t\tstyle=\"background-color: #19c0cc\">8:30 - 8:45 (15 mins)<span\r\n\t\t\tid=\"DMM50000048927\" class=\"fc-event-title\"\r\n\t\t\tstyle=\"background-color: #19c0cc; float: right;\">Mrs Ydhf\r\n\t\t\t\tDhfhh hd, DMM50000048927</span><span\r\n\t\t\tstyle=\"background-color: red; margin-left: 20px; margin-right: 500px; float: right\">\r\n\t\t</span></span></a>\r\n\t<div class=\"extronal-action multiColumnDayAgenda\">\r\n\t\t<span id=\"2338906\" class=\"fc-event-title\"\r\n\t\t\tstyle=\"float: left; background-color: #19c0cc;\">dfdfdfd</span><span\r\n\t\t\tid=\"2338906\" class=\"fc-event-title\"\r\n\t\t\tstyle=\"float: left; background-color: #19c0cc;\">APPOINT-2272673</span><span\r\n\t\t\tclass=\"blank-blue\"> </span><span class=\"blank-blue\"> </span><span\r\n\t\t\tclass=\"derma-info\" title=\"Derma Session details\"> </span><span\r\n\t\t\tclass=\"registration-edit\" title=\"Edit Patient Info\"> </span><span\r\n\t\t\tclass=\"create-updatestatus\" title=\"Confirm\"></span><span\r\n\t\t\tclass=\"edit-appointment\" title=\"Edit Appointment\"> </span><span\r\n\t\t\tclass=\"multi-remark\" title=\"Remarks\"> </span><span\r\n\t\t\tclass=\"after-callstatus\" title=\"After Call\"> </span><span\r\n\t\t\tclass=\"unPaidAmt\" title=\"Finance Info.\"> </span><span\r\n\t\t\tclass=\"manualSMS\" title=\"Manual SMS\"> </span><span\r\n\t\t\tclass=\"insuranceCardDtls\" title=\"Patient Eligibility\"> </span><span\r\n\t\t\tclass=\"create-invoice\" title=\"Invoice\"> </span><span\r\n\t\t\tclass=\"show-details\" title=\"Show Details\"\r\n\t\t\tid=\"tooltip-icn-DMM50000048927\"> </span><span class=\"show-EMR\"\r\n\t\t\ttitle=\"Show EMR\"> </span>\r\n\t</div>\r\n\t<div id=\"DMM50000048927-70\" class=\"apptooltip\" style=\"display: none;\">\r\n\t\t<table class=\"tooltips\">\r\n\t\t\t<tbody>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td rowspan=\"7\" style=\"width: 17%\"><img\r\n\t\t\t\t\t\tid=\"DMM50000048927-70Img\"\r\n\t\t\t\t\t\tsrc=\"/elite/fos/?type_=1&amp;filename=EID2772828832.png\"\r\n\t\t\t\t\t\tonerror=\"putDefaultImg(this,2)\"\r\n\t\t\t\t\t\tstyle=\"width: 100%; height: 135px; border: 0.5px solid gray;\"></td>\r\n\t\t\t\t\t<td>Pat. Name</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">Mrs Ydhf Dhfhh\r\n\t\t\t\t\t\t\thd</label></td>\r\n\t\t\t\t\t<td>FILE No.</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">DMM50000048927</label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Mob No.</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">+9662288272722</label></td>\r\n\t\t\t\t\t<td>AGE</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">23 Years</label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Atnd. Phy.</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">Dr Mai Mohammad\r\n\t\t\t\t\t\t\tAbdalraufe Salman, Cardiology</label></td>\r\n\t\t\t\t\t<td>PrimaryInsr</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">Cash</label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Ser Pend. Amt.</td>\r\n\t\t\t\t\t<td style=\"color: blue\"><label onclick=\"selectText(this)\">undefined</label></td>\r\n\t\t\t\t\t<td>Last Pmt.</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\"> ( ) </label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Booked By</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\"></label></td>\r\n\t\t\t\t\t<td>Enc. By</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\"></label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Old File No</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\"></label></td>\r\n\t\t\t\t\t<td>Ins. Validity</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\"></label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>Appointment Remarks</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">dfdfdfd</label></td>\r\n\t\t\t\t\t<td>Patient Refference Source</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">Instagram</label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t\t<td>CX_Promotional</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">drug discount</label></td>\r\n\t\t\t\t\t<td>Appointent No</td>\r\n\t\t\t\t\t<td><label onclick=\"selectText(this)\">APPOINT-2272673</label></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</tbody>\r\n\t\t</table>\r\n\t</div>\r\n\t<div class=\"ui-resizable-handle ui-resizable-s\" unselectable=\"on\">=</div>\r\n</div>\r\n\r\n\r\n -->\r\n\r\n";
       /***/
     },
 
@@ -1409,7 +1725,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<div class=\"card text-white bg-{{ bgClass }}\">\n    <div class=\"card-header\">\n        <div class=\"row\">\n            <div class=\"col-md-2\">\n                <i class=\"fa {{ icon }} fa-4x \"></i>\n            </div>\n            <div class = \"col-md-10 text-right \">\n                <div class=\"\">{{ count }}</div>\n                <div class=\" \">{{ label }}</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"card-footer\">\n        <span class=\"float-left \">Click  to {{data}}</span>\n        <a class=\"float-right card-inverse\" href=\"javascript:void(0)\" \n\t\t(click)=\"navigation(outcomeLink)\"   >\n            <span><i class=\"fa fa-arrow-circle-right\" style= \"color:black\"></i></span>\n        </a>\n    </div>\n</div>\n";
+      __webpack_exports__["default"] = "<div class=\"card text-white bg-{{ bgClass }} m-1\">\n    <div class=\"card-header\">\n        <div class=\"row\">\n            <div class=\"col-md-2\">\n                <i class=\"fa {{ icon }} fa-4x\"></i>\n            </div>\n            <div class = \"col-md-10 text-right \">\n                <div class=\"\">{{ count }}</div>\n                <div class=\" \">{{ label }}</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"card-footer\" (click)=\"navigation(outcomeLink)\" >\n        <span class=\"float-left \">Click  to {{data}}</span>\n        <a class=\"float-right card-inverse\" href=\"javascript:void(0)\" \n\t\t  >\n            <span><i class=\"fa fa-arrow-circle-right\" style= \"color:black\"></i></span>\n        </a>\n    </div>\n</div>\n";
       /***/
     }
   },
